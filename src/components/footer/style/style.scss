@@ -1,0 +1,69 @@
+
+
+@mixin flexCentre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flexCentreWrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+$backLG001:
+    radial-gradient(circle farthest-side, #fceabb, #f8b500);
+
+
+
+
+.FOOTER{
+    background-image: $backLG001;
+    padding-top: 5%
+}
+
+
+.footer-title{
+    @include flexCentre;
+    font-size: 5vw;
+    font-weight: bolder;
+}
+
+.above-icon{
+    @include flexCentre;
+    margin-top: 10%;
+    font-size: 2rem;
+}
+
+.fotr-icon-div{
+    @include flexCentreWrap;
+    margin: 10%;
+    margin-top: 0%;
+    
+
+    a{
+        margin: 05%;
+    }
+    .footer-icon {
+            width: 8vw;
+            background-color: white;
+            border: solid 5px black;
+            border-radius: 10%;
+            
+        }
+
+}
+
+.phone-num-div{
+    @include flexCentre;
+    margin-bottom: 10%;
+    padding-bottom: 5%;
+
+    p{
+        font-size: 3.5vw;
+        padding: 01%;
+    }
+}
+

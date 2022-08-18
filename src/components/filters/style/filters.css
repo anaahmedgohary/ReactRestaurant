@@ -1,0 +1,43 @@
+.filter-container {
+  justify-content: center;
+  background-color: black;
+}
+
+.main-filter {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  font-size: 1.3em;
+}
+.main-filter h3 {
+  color: blanchedalmond;
+}
+
+.filter-elments {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.filter-elmnt {
+  display: block;
+  padding: 2%;
+}
+.filter-elmnt button {
+  display: flex;
+  margin: auto;
+}
+.filter-elmnt input {
+  display: flex;
+  margin: auto;
+  cursor: pointer;
+  width: 7vw;
+  height: 7vw;
+}
+
+.filter-btn {
+  display: flex;
+  flex-wrap: wrap;
+}/*# sourceMappingURL=filters.css.map */

@@ -1,0 +1,50 @@
+.FOOTER {
+  background-image: radial-gradient(circle farthest-side, #fceabb, #f8b500);
+  padding-top: 5%;
+}
+
+.footer-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5vw;
+  font-weight: bolder;
+}
+
+.above-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+  font-size: 2rem;
+}
+
+.fotr-icon-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 10%;
+  margin-top: 0%;
+}
+.fotr-icon-div a {
+  margin: 5%;
+}
+.fotr-icon-div .footer-icon {
+  width: 8vw;
+  background-color: white;
+  border: solid 5px black;
+  border-radius: 10%;
+}
+
+.phone-num-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10%;
+  padding-bottom: 5%;
+}
+.phone-num-div p {
+  font-size: 3.5vw;
+  padding: 1%;
+}/*# sourceMappingURL=style.css.map */

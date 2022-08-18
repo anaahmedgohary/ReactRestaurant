@@ -1,0 +1,22 @@
+body {
+  background-color: darkgreen;
+  background-image: none;
+  color: antiquewhite;
+}
+
+#viewCart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#viewCart #viewCartBtn .carticon {
+  width: 10vw;
+}
+
+.prod-cards {
+  color: black;
+}
+
+.spbody {
+  display: flex;
+}/*# sourceMappingURL=spbody.css.map */

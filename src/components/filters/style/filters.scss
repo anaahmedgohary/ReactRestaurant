@@ -1,0 +1,62 @@
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+
+
+
+.filter-container {
+    justify-content: center;
+    background-color: black;
+
+}
+
+.main-filter {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.3em;
+
+    h3{
+        color: blanchedalmond;
+    }
+
+
+}
+
+
+.filter-elments{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    
+}
+
+.filter-elmnt {
+    display: block;
+    padding: 02%;
+
+    button{
+        display: flex;
+        margin: auto;
+    }
+
+    input {
+        display: flex;
+        margin: auto;
+        cursor: pointer;
+        width: 7vw;
+        height: 7vw;
+    }
+}
+
+.filter-btn {
+    display: flex;
+    flex-wrap: wrap;
+}

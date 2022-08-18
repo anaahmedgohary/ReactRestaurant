@@ -1,0 +1,40 @@
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+body{
+    background-color: darkgreen;
+     background-image: none;
+    color: antiquewhite;
+}
+
+
+
+
+
+
+#viewCart{
+    @include flexCenter;
+
+    #viewCartBtn{
+
+        .carticon {
+                width: 10vw;
+            }
+    }
+
+    
+}
+
+.prod-cards{
+    color: black;
+}
+
+.spbody {
+    display: flex;
+}

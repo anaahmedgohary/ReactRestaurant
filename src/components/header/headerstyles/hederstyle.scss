@@ -1,0 +1,82 @@
+$darkgreen: rgb(96, 129, 46);
+$NavFont: 1.5rem;
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+*{
+    box-sizing: border-box;
+}
+
+header{
+    // @include flexCenter();
+    background-color: $darkgreen;
+    color: blanchedalmond;
+    background-image: url(../images/backRedVF.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.main-title{
+    @include flexCenter();
+    padding-top: 8%;
+    margin-bottom: 2%;
+    font-family: 'Reem Kufi', sans-serif;
+    font-size: 15vw;
+    font-weight: 900;
+    overflow-wrap: break-word;
+    overflow-wrap:break-word;
+    word-wrap: break-word;
+    
+    letter-spacing: 0.5px;
+    font-style: italic;
+    
+    //font-display: ;
+    color: bisque;
+    
+}
+
+.main-subtitle{
+    @include flexCenter();
+    margin-bottom: 5%;
+    background: transparent;
+    font-family: 'Reem Kufi', sans-serif;
+    .fa-solid{
+        padding: 02%;
+    }
+    #countVisitors{
+        position: absolute;
+        right: 2vw;
+        text-align: center;
+    }
+}
+
+.nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 05%;
+    
+    .nav-element{
+        font-weight: 900;
+        font-size: 1.8rem;
+        padding: 01%;
+        color: blanchedalmond;
+        border: 6px solid;
+        background-color: darkolivegreen;
+        border-radius: 20%;
+        margin: 0.3%;
+
+        a{
+            text-decoration: none;
+            color: blanchedalmond;
+            align-items: center
+        }
+    }
+}
+

@@ -1,0 +1,76 @@
+$darkgreen: rgb(96, 129, 46);
+$NavFont: 1.5rem;
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    // @include flexCenter();
+    background-color: $darkgreen;
+    color: blanchedalmond;
+    background-image: url(../images/backRedVF.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.main-title {
+    @include flexCenter();
+    padding-top: 8%;
+    font-family: 'Reem Kufi', sans-serif;
+    font-size: 50px;
+    letter-spacing: 0.5px;
+    font-style: italic;
+    font-stretch: extra-expanded;
+    //font-display: ;
+    color: bisque;
+    background: transparent;
+}
+
+.main-subtitle {
+    @include flexCenter();
+    margin-bottom: 5%;
+    background: transparent;
+    font-family: 'Reem Kufi', sans-serif;
+
+    .fa-solid {
+        padding: 02%;
+    }
+
+    #countVisitors {
+        position: absolute;
+        right: 2vw;
+        text-align: center;
+    }
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 05%;
+    padding: 03%;
+
+    .nav-element {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.8rem;
+        padding: 02%;
+        color: blanchedalmond;
+        border: solid;
+
+        a {
+            text-decoration: none;
+            color: blanchedalmond;
+        }
+    }
+}
