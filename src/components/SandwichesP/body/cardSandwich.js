@@ -19,7 +19,7 @@ const CardSandwich = (props) =>
                         {props.description}
                     </p>
                     <button onClick={()=> addItem(props.item)} className="btn btn-primary">
-                        Add To Cart Now
+                        Add To Cart
                     </button>
                 </div>
             </div>
