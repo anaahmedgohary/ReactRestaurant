@@ -10,7 +10,7 @@ const Home = () => {
     return (
       <div style={{ backgroundColor: "black" }}>
         <div>
-          <Mheader incrementBy={1} />
+          <Mheader />
         </div>
         <div>
           <Mfilters />

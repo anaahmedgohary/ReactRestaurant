@@ -12,7 +12,7 @@ const CartSand = () => {
         removeItem,
         emptyCart,
     } = useCart();
-    if (isEmpty) return <h1> nothing in cartoo</h1>
+    if (isEmpty) return <h1>Cart is empty!</h1>
 
   return (
     <>
