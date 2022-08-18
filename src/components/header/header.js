@@ -9,19 +9,15 @@ import "./headerstyles/hederstyle.css"
 const Mheader = (props)=>
 {
     
-    const [Mesh, setMesh] = useState(0);
+    
 
-    const VisitCount = ()=>{
-        setMesh(Mesh + props.incrementBy)
-        
-        console.log(Mesh)
-    };
+    
 
-    useEffect (()=>{
-        let zbutun = document.querySelectorAll("#bobio")[0]
-        //zbutun.current.click()
-        zbutun.click()
-    }, [])
+    // useEffect (()=>{
+    //     let zbutun = document.querySelectorAll("#bobio")[0]
+    //     //zbutun.current.click()
+    //     zbutun.click()
+    // }, [])
     
     return (
         <header>
@@ -35,10 +31,7 @@ const Mheader = (props)=>
                 
                 <i className="fa-solid fa-burger fa-2x"></i>
 
-                <div id='countVisitors'>
-                    <button id='bobio' className="btn btn-info" onClick={VisitCount}>visit counter</button>
-                    <p>{Mesh}</p>
-                </div>
+                
             </div>
             <nav className="nav main-nav">
                 <span className="nav-element"><a className="" href="/">Home</a></span>

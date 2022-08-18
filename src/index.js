@@ -34,9 +34,9 @@ root.render(
    </React.StrictMode>
  );
 
-//  let kidfod = document.getElementById("bobio")
 
-//  kidfod.style.display = "none"
+
+
 
 
 
