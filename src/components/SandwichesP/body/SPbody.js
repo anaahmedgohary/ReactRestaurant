@@ -20,7 +20,7 @@ const SPbody = () =>
           <img className="carticon" src={require("./images/carticon2.jpg")} alt="" />
         </a>
         <p id="cartCounter">
-          000
+          
         </p>
       </div>
 
