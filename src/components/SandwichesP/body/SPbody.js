@@ -17,7 +17,7 @@ const SPbody = () =>
     <div className="spbody">
       <div id="viewCart">
         <a id="viewCartBtn" href="/cart" title="View Cart">
-          <img className="carticon" src={require("./images/carticon2.jpg")} alt="" />
+          <img className="carticon" src="./images/carticon2.jpg" alt="" />
         </a>
         <p id="cartCounter">
           

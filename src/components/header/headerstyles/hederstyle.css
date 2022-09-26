@@ -5,7 +5,7 @@
 header {
   background-color: rgb(96, 129, 46);
   color: blanchedalmond;
-  background-image: url(../images/backRedVF.jpg);
+  background-image: url(./images/backRed.jpg);
   background-attachment: fixed;
   background-size: cover;
 }
