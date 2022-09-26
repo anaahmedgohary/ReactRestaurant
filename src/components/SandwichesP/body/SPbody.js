@@ -20,7 +20,7 @@ const SPbody = () =>
           <img className="carticon" src="./images/carticon2.jpg" alt="" />
         </a>
         <p id="cartCounter">
-          
+          {}
         </p>
       </div>
 

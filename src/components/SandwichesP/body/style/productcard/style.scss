@@ -2,3 +2,43 @@
     max-height: 40%;
     overflow: hidden;
 }
+
+.cart-empty{
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+.added-items-row{
+    background-color: greenyellow;
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.order-sheet{
+    background-color: greenyellow;
+    text-align: center;
+}
+
+.table-headers{
+    text-align: center;
+}
+
+.item-qty{
+    font-weight: bolder;
+}
+
+.total-div{
+    background-color: whitesmoke;
+    border-radius: 40px;
+}
+
+#cartCounter{
+    position: absolute;
+    height: 20px;
+    width:20px;
+    background-color: red;
+    color:white;
+    
+}
