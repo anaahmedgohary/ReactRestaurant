@@ -1,6 +1,6 @@
 .filter-container {
   justify-content: center;
-  background-color: black;
+  background-color: whitesmoke;
 }
 
 .main-filter {
@@ -12,7 +12,7 @@
   font-size: 1.3em;
 }
 .main-filter h3 {
-  color: blanchedalmond;
+  color: gold;
 }
 
 .filter-elments {

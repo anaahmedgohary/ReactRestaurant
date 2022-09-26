@@ -59,32 +59,61 @@ function Sandwitch()
 
 
     return (
-        <>
-
-
-            <div id="sandBlock" className="PBlock slider transBackg">
-                <div className="gb-title-pos">
-                    <h2 className="gb-title">ساندوتشات</h2>
-                </div>
-                <div className="gRowCards">
-                    <div className="slide card">
-                        {/* <img src={require('/images/image-name.png')} /> */}
-                        <img onClick={showImgPop} className="cat-row-image" src={require('./images/1Sandwiches.jpg')} alt="طعمية" />
-                    </div>
-                    <div className="slide card">
-                        <img onClick={showImgPop} className="cat-row-image" src={require("./images/2Sandwiches.jpg")} alt="جبنة رومي" />
-                    </div>
-                    <div className="slide card">
-                        <img onClick={showImgPop} className="cat-row-image" title="شاورما" src={require("./images/3Sandwiches.jpg")} alt="شاورما" />
-                    </div>
-                    <div className="slide card">
-                        <img onClick={showImgPop} className="cat-row-image" title="لحمة مفرومة" src={require("./images/5Sandwiches.jpg")} alt="لحمة مفرومة" />
-                    </div>
-                    <div className="slide card">
-                        <a href="Sandwiches.html" target="_blank"><img className="cat-row-image" title="More Sandwiches" src={require("./images/viewall5.jpg")} alt="More Sandwiches" /></a>
-                    </div>
-                </div>
+      <>
+        <div id="sandBlock" className="PBlock slider transBackg">
+          <div className="gb-title-pos">
+            <h2 className="gb-title">ساندوتشات</h2>
+          </div>
+          <div className="gRowCards">
+            <div className="slide card">
+              {/* <img src={require('/images/image-name.png')} /> */}
+              <img
+                onClick={showImgPop}
+                className="cat-row-image"
+                src={require("./images/1Sandwiches.jpg")}
+                title="طعمية"
+                alt="طعمية"
+              />
             </div>
+            <div className="slide card">
+              <img
+                onClick={showImgPop}
+                className="cat-row-image"
+                src={require("./images/2Sandwiches.jpg")}
+                title="جبنة رومي"
+                alt="جبنة رومي"
+              />
+            </div>
+            <div className="slide card">
+              <img
+                onClick={showImgPop}
+                className="cat-row-image"
+                title="شاورما"
+                src={require("./images/3Sandwiches.jpg")}
+                alt="شاورما"
+              />
+            </div>
+            <div className="slide card">
+              <img
+                onClick={showImgPop}
+                className="cat-row-image"
+                title="لحمة مفرومة"
+                src={require("./images/5Sandwiches.jpg")}
+                alt="لحمة مفرومة"
+              />
+            </div>
+            <div className="viewAll-div">
+              <a className="viewAll-link" href="/Sandwiches" target="_blank">
+                <img
+                  className="viewAll-img"
+                  title="More Sandwiches"
+                  src={require("./images/viewall5.jpg")}
+                  alt="More Sandwiches"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
 
         <div id="popImageContainer" className="hide-popup">
           <span onClick={closePopupImg} id="close-icon" title="Close">

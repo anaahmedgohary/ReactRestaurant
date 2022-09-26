@@ -8,7 +8,7 @@ import Mfooter from "./components/footer/Footer";
 
 const Home = () => {
     return (
-      <div style={{ backgroundColor: "black" }}>
+      <div>
         <div>
           <Mheader />
         </div>
