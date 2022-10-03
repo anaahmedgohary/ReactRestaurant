@@ -13,22 +13,17 @@ const SPbody = () =>
 
 
   return (
-    
     <div className="spbody">
-      <div id="viewCart">
+      {/* <div id="viewCart">
         <a id="viewCartBtn" href="/cart" title="View Cart">
           <img className="carticon" src="./images/carticon2.jpg" alt="" />
         </a>
-        <p id="cartCounter">
-          {}
-        </p>
-      </div>
+        <p id="cartCounter">0</p>
+      </div> */}
 
       <div className="container py-4 prod-cards">
         <div className="row justify-content-center">
-
-          {dataSandwich.allSandwiches.map((item, index) =>
-          {
+          {dataSandwich.allSandwiches.map((item, index) => {
             return (
               <CardSandwich
                 image={item.image}
@@ -36,12 +31,12 @@ const SPbody = () =>
                 price={item.price}
                 description={item.description}
                 item={item}
-                key={index} />
-            )
+                key={index}
+              />
+            );
           })}
         </div>
       </div>
-      
     </div>
   );
 };

@@ -4,19 +4,63 @@ body {
   color: antiquewhite;
 }
 
-#viewCart {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#viewCart #viewCartBtn .carticon {
-  width: 10vw;
-}
-
 .prod-cards {
   color: black;
+  display: flex;
 }
 
 .spbody {
   display: flex;
+}
+
+#viewCart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border: solid goldenrod;
+  background-color: gold;
+  rotate: 45deg;
+  position: fixed;
+  right: 2%;
+  bottom: 60%;
+}
+#viewCart:hover {
+  right: 2%;
+  transition: 1000ms;
+  background-color: black;
+}
+#viewCart #viewCartBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: rgba(218, 165, 32, 0.445);
+}
+#viewCart #viewCartBtn .carticon {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 50%;
+  rotate: -45deg;
+}
+#viewCart #cartCounter {
+  position: absolute;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100%;
+  font-weight: bolder;
+  pointer-events: none;
+  rotate: -45deg;
 }/*# sourceMappingURL=spbody.css.map */

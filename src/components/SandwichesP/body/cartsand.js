@@ -2,7 +2,10 @@ import React from "react";
 import { useCart } from "react-use-cart";
 import "./style/productcard/style.css";
 
-const CartSand = () => {
+const CartSand = () =>
+{
+    
+    const cartcounter = document.getElementById("cartCounter");
     const {
         isEmpty,
         totalUniqueItems,
@@ -13,11 +16,25 @@ const CartSand = () => {
         removeItem,
         emptyCart,
     } = useCart();
-    if (isEmpty) return <h1 className="cart-empty">Cart is empty!</h1>
+
+    
+    if (isEmpty)
+    {
+        cartcounter.innerText = totalItems;
+        return <h1 className="cart-empty">Cart is empty!</h1>
+    };
 
   return (
     
-          <section className="py-4 container">
+      <section className="py-4 container">
+          
+          <div id="viewCart">
+              <a id="viewCartBtn" href="/cart" title="View Cart">
+                  <img className="carticon" src="./images/carticon2.jpg" alt="" />
+              </a>
+              <p id="cartCounter">{totalItems}</p>
+          </div>
+
               <div className="row justify-content-center">
                   <div className="col-12">
                       <h5 className="added-items-row"> ({totalItems}) items in Cart.  from ({totalUniqueItems}) categories</h5>

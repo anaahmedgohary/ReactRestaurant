@@ -34,11 +34,50 @@
     border-radius: 40px;
 }
 
-#cartCounter{
-    position: absolute;
-    height: 20px;
-    width:20px;
-    background-color: red;
-    color:white;
-    
-}
+
+// #viewCart {
+//     @include flexCenter;
+//     height: fit-content;
+//     border: solid goldenrod;
+//     background-color: gold;
+//     rotate: 45deg;
+//     position: fixed;
+//     left: 6%;
+//     bottom: 50%;
+
+//     #viewCartBtn {
+//         @include flexCenter;
+//         width: 4rem;
+//         height: 4rem;
+//         border-radius: 50%;
+//         //border: solid white;
+//         background-color: rgba(218, 165, 32, 0.445);
+//         //rotate: 45deg;
+
+//         .carticon {
+//             //position: relative;
+//             width: 100%;
+//             height: 100%;
+//             overflow: hidden;
+//             border-radius: 50%;
+//             rotate: -45deg;
+//         }
+//     }
+
+//     #cartCounter {
+//         position: absolute;
+//         height: 1.5rem;
+//         width: 1.5rem;
+//         border-radius: 50%;
+//         background-color: red;
+//         color: white;
+//         text-align: center;
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         font-size: 100%;
+//         font-weight: bolder;
+//         rotate: -45deg;
+//     }
+
+// }
