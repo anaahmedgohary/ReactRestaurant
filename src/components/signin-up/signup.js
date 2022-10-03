@@ -17,10 +17,7 @@ export default function SignUp()
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    axios.post(
-      "/api/index.php",
-      inputs
-    );
+    axios.post("us-east.connect.psdb.cloud/api", inputs);
     console.log(inputs);
   };
 
