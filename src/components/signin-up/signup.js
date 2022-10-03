@@ -20,7 +20,7 @@ export default function SignUp()
     // axios.post(".../api", inputs);
     console.log(inputs);
 
-    fetch("us-east.connect.psdb.cloud/api", {
+    fetch("http://us-east.connect.psdb.cloud/api", {
       // Enter your IP address here
 
       method: "POST",
