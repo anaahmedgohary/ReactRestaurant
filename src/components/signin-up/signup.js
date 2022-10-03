@@ -18,7 +18,7 @@ export default function SignUp()
     event.preventDefault();
 
     axios.post(
-      "https://us-east.connect.psdb.cloud/reactrestaurant/api/",
+      "https://us-east.connect.psdb.cloud/api/",
       inputs
     );
     console.log(inputs);
