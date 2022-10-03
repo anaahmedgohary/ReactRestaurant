@@ -18,7 +18,7 @@ export default function SignUp()
     event.preventDefault();
 
     axios.post(
-      "/api",
+      "/api/index.php",
       inputs
     );
     console.log(inputs);
