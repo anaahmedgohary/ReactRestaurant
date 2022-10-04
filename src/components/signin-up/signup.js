@@ -1,7 +1,8 @@
 import React from 'react';
 import "./style/signin.css";
 import { useState } from "react";
-// import axios from 'axios';
+import axios from 'axios';
+//import env from './api/.env';
 
 export default function SignUp()
 {
@@ -17,16 +18,17 @@ export default function SignUp()
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    // axios.post(".../api", inputs);
+    axios.post("./api", inputs);
     console.log(inputs);
 
-    fetch("https://us-east.connect.psdb.cloud/api", {
-      // Enter your IP address here
+    // fetch("https://us-east.connect.psdb.cloud/", {
+    //   // Enter your IP address here
 
-      method: "POST",
-      mode: "cors",
-      body: JSON.stringify(inputs), // body data type must match "Content-Type" header
-    });
+    //   method: "POST",
+    //   url : 'index.php',
+    //   mode: "cors",
+    //   body: JSON.stringify(inputs), 
+    // });
     
   };
 
