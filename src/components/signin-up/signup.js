@@ -18,17 +18,17 @@ export default function SignUp()
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    axios.post("https://api.vercel.com", inputs);
+    axios.post("./api", inputs);
     console.log(inputs);
 
-    // fetch("https://us-east.connect.psdb.cloud/", {
-    //   // Enter your IP address here
+    fetch("./api", {
+      // Enter your IP address here
 
-    //   method: "POST",
-    //   url : 'index.php',
-    //   mode: "cors",
-    //   body: JSON.stringify(inputs), 
-    // });
+      method: "POST",
+      url: "./api/index.php",
+      mode: "cors",
+      body: JSON.stringify(inputs),
+    });
     
   };
 
