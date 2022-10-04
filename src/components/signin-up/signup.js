@@ -18,7 +18,7 @@ export default function SignUp()
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    axios.post("./api", inputs);
+    axios.post("https://api.vercel.com", inputs);
     console.log(inputs);
 
     // fetch("https://us-east.connect.psdb.cloud/", {
