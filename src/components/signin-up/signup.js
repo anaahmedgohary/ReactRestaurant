@@ -18,9 +18,9 @@ export default function SignUp()
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    axios.defaults.baseURL = process.env.APP_URL
+    //axios.defaults.baseURL = process.env.APP_URL
 
-    axios.post(process.env.APP_URL, inputs);
+    axios.post(process.env.vercel.app, inputs);
     console.log(inputs);
 
     // fetch("mAgfFs4y1Dt1ERMjSZCNhprH", {
