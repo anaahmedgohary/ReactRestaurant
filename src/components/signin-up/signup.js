@@ -19,13 +19,17 @@ export default function SignUp()
     event.preventDefault();
 
     //axios.defaults.baseURL = process.env.APP_URL
+    // process.env.NOW_URL
+    let baseURL =  process.env.NOW_URL
 
-    axios.post("https://api.vercel.com", inputs, {headers : {
-      'Content-Type': 'https://react-restaurant-php.vercel.app',
-      'Access-Control-Allow-Origin': "*",
-      'Access-Control-Allow-Headers': '*'
-
-    }});
+    axios.post(baseURL, inputs,
+      {
+        headers: {
+          //'Content-Type': 'https://react-restaurant-php.vercel.app',
+          'Access-Control-Allow-Origin': "*",
+          'Access-Control-Allow-Headers': '*'
+        }
+      });
     console.log(inputs);
 
     // fetch("mAgfFs4y1Dt1ERMjSZCNhprH", {
