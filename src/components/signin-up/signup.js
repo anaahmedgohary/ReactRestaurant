@@ -20,7 +20,7 @@ export default function SignUp()
 
     //axios.defaults.baseURL = process.env.APP_URL
     // process.env.NOW_URL
-    let baseURL = process.env.API_URL;  //process.env.NOW_URL
+    let baseURL = process.env.NOW_URL;      //process.env.API_URL;  //process.env.NOW_URL
 
     axios.post(baseURL, inputs,
       {

@@ -3,10 +3,10 @@
 	* Database Connection
 	*/
 	class DbConnect {
-		private $server = 'us-east.connect.psdb.cloud';
-		private $dbname = 'fooddelivery';
-		private $user = 'd1q35zdh6g7m5eslvnal';
-		private $pass = '************';
+		 $server = process.env.HOST;
+		 $dbname = process.env.DATABASE;
+		 $user = process.env.USERNAME;
+		 $pass = process.env.PASSWORD;
 
 		public function connect() {
 			try {
@@ -19,3 +19,12 @@
 		}
 	}
  ?>
+
+
+
+ <?php
+//   $mysqli = mysqli_init();
+//   $mysqli->ssl_set(NULL, NULL, "/etc/ssl/certs/ca-certificates.crt", NULL, NULL);
+//   $mysqli->real_connect($_ENV["HOST"], $_ENV["USERNAME"], $_ENV["PASSWORD"], $_ENV["DATABASE"]);
+//   $mysqli->close();
+?> 

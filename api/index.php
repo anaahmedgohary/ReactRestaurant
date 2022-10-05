@@ -4,15 +4,18 @@ ini_set('display_errors',1);
 header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Headers: *");
 
-include "./connection.php";
-$objDB = new DbConnect;
-$conn = $objDB->connect();
+include "./verceldb.php";
+// $objDB = new DbConnect;
+//$conn = $objDB->connect();
+
+$conn = $pdo->connect();
+// $pdo
 
 //var_dump($conn);
 //print_r($_POST);
 //print_r(file_get_contents('php://input'));
 
-//echo "wow test";
+echo "wow test";
 
 $method = $_SERVER['REQUEST_METHOD'];
     switch ($method) {
