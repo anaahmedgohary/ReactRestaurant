@@ -20,12 +20,13 @@ export default function SignUp()
 
     //axios.defaults.baseURL = process.env.APP_URL
     // process.env.NOW_URL
-    let baseURL =  process.env.NOW_URL
+    let baseURL = process.env.API_URL;  //process.env.NOW_URL
 
     axios.post(baseURL, inputs,
       {
         headers: {
           //'Content-Type': 'https://react-restaurant-php.vercel.app',
+          'Content-type': 'application/json',
           'Access-Control-Allow-Origin': "*",
           'Access-Control-Allow-Headers': '*'
         }
