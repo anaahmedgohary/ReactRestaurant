@@ -20,7 +20,7 @@ export default function SignUp()
 
     //axios.defaults.baseURL = process.env.APP_URL
 
-    axios.post(process.env.vercel.app, inputs);
+    axios.post(process.env.HOST, inputs);
     console.log(inputs);
 
     // fetch("mAgfFs4y1Dt1ERMjSZCNhprH", {
