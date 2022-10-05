@@ -20,7 +20,7 @@ export default function SignUp()
 
     //axios.defaults.baseURL = process.env.APP_URL
 
-    axios.post(process.env.HOST, inputs);
+    axios.post("https://react-restaurant-h47a0xx0f-ahmedgohary.vercel.app", inputs);
     console.log(inputs);
 
     // fetch("mAgfFs4y1Dt1ERMjSZCNhprH", {
