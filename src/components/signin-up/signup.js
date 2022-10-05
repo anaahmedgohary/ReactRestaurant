@@ -18,18 +18,19 @@ export default function SignUp()
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    axios.post("./api", inputs);
+    axios.defaults.baseURL = process.env.APP_URL
+
+    axios.post(process.env.APP_URL, inputs);
     console.log(inputs);
 
-    fetch("./api", {
-      // Enter your IP address here
-
-      method: "POST",
-      url: "./api/index.php",
-      mode: "cors",
-      body: JSON.stringify(inputs),
-    });
-    
+    // fetch("mAgfFs4y1Dt1ERMjSZCNhprH", {
+    //   // Enter your IP address here
+    // axios.defaults.baseURL = process.env.APP_URL
+    //   method: "POST",
+    //   // url: "./api/index.php",
+    //   mode: "cors",
+    //   body: JSON.stringify(inputs),
+    // });
   };
 
 
