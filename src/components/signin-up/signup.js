@@ -2,7 +2,6 @@ import React from 'react';
 import "./style/signin.css";
 import { useState } from "react";
 import axios from 'axios';
-//import env from './api/.env';
 
 export default function SignUp()
 {
@@ -20,15 +19,16 @@ export default function SignUp()
 
     //axios.defaults.baseURL = process.env.APP_URL
     // process.env.NOW_URL
-    let baseURL = process.env.NOW_URL;      //process.env.API_URL;  //process.env.NOW_URL
+    let baseURL = "http://localhost:80/api/";      //process.env.API_URL;  //process.env.NOW_URL
 
     axios.post(baseURL, inputs,
       {
         headers: {
           //'Content-Type': 'https://react-restaurant-php.vercel.app',
-          'Content-type': 'application/json',
+          'Content-type': 'application/x-www-form-urlencoded',
           'Access-Control-Allow-Origin': "*",
-          'Access-Control-Allow-Headers': '*'
+          //'Access-Control-Allow-Headers': '*',
+          'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept'
         }
       });
     console.log(inputs);
