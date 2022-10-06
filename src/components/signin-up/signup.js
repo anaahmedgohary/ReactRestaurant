@@ -40,7 +40,7 @@ export default function SignUp()
     // https://react-restaurant-h47a0xx0f-ahmedgohary.vercel.app      //process.env.API_URL;  //process.env.NOW_URL
     // http://localhost:80/api/
 
-    axios.post(`${supabase}`, inputs,
+    axios.post(supabase, inputs,
       {
         headers: {
           //'Content-Type': 'https://react-restaurant-php.vercel.app',
