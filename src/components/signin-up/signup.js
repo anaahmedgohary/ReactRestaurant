@@ -1,13 +1,15 @@
 import React from 'react';
 import "./style/signin.css";
 import { useState } from "react";
-import axios from 'axios';
+//import axios from 'axios';
 import { createClient } from '@supabase/supabase-js';
 
 export default function SignUp()
 {
   
-  const [inputs, setInputs] = useState({})
+  const [inputs, setInputs] = useState();
+  const [iemail, setIemail] = useState("");
+  const [ipassword, setIpassword] = useState("");
 
   const handleChange = (event) =>
   {
@@ -15,7 +17,20 @@ export default function SignUp()
     const value = event.target.value;
     setInputs(values => ({ ...values, [name]: value }));
     
+    console.log(inputs);
+    
+    //console.log(inputs.password);
+    //console.log(inputs);
+    setIemail(document.getElementById("email").value);
+    setIpassword(document.getElementById("password").value);
+    
   }
+
+  
+  
+  console.log(iemail);
+  console.log(ipassword);
+  
 
   //const supabaseUrl = 'https://rfjecvakijoqooiktpon.supabase.co';
   //const supabaseKey = process.env.SUPABASE_KEY;
@@ -27,6 +42,8 @@ export default function SignUp()
   {
     
     event.preventDefault();
+    setIemail(iemail);
+    setIpassword(ipassword);
 
     //axios.defaults.baseURL = process.env.APP_URL
     // process.env.NOW_URL
@@ -35,12 +52,14 @@ export default function SignUp()
     const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJmamVjdmFraWpvcW9vaWt0cG9uIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NjQ4NTM2MDIsImV4cCI6MTk4MDQyOTYwMn0.Ryea4rE_iOPb49WzUhvHZiOaKMkL_48kNPMVejaeP_M';
     const supabase = createClient(supabaseUrl, SUPABASE_ANON_KEY);
     //const { inputs: newuser, error } = await supabase.from('newuser').select('*')
-    const { inputs, error } = await supabase
+    const { data, error } = await supabase
       .from('newuser')
       .insert([
-        { email: 'The Shire', password: 554 }
+        { email: `${iemail}`, password: `${ipassword}` }
+        
       ]);
-    //console.log(supabase);
+    console.log(error);
+    console.log(data);
 
     //let baseURL = "https://rfjecvakijoqooiktpon.supabase.co/api/";
     // https://app.supabase.com/project/rfjecvakijoqooiktpon/storage/buckets/api
@@ -62,7 +81,7 @@ export default function SignUp()
     
 
 
-    console.log(inputs);
+    
   }
     
 
@@ -88,6 +107,7 @@ export default function SignUp()
                 id="email"
                 required
                 onChange={handleChange}
+                
               />
               <label className="label-signin" htmlFor="password">
                 Password
@@ -98,6 +118,7 @@ export default function SignUp()
                 id="password"
                 required
                 onChange={handleChange}
+                
               />
               <div>
                 <input
