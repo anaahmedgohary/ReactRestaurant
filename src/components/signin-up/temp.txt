@@ -1,0 +1,9 @@
+const { inputs, error } = await supabase
+  .from('newuser')
+  .insert([
+    { email: 'The Shire', password: 554 }
+  ])
+
+
+  
+
