@@ -19,7 +19,9 @@ export default function SignUp()
 
     //axios.defaults.baseURL = process.env.APP_URL
     // process.env.NOW_URL
-    let baseURL = "http://localhost:80/api/";      //process.env.API_URL;  //process.env.NOW_URL
+    let baseURL = "https://react-restaurant-h47a0xx0f-ahmedgohary.vercel.app/";
+    // https://react-restaurant-h47a0xx0f-ahmedgohary.vercel.app      //process.env.API_URL;  //process.env.NOW_URL
+    // http://localhost:80/api/
 
     axios.post(baseURL, inputs,
       {
