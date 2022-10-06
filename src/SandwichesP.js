@@ -1,6 +1,6 @@
 import React from 'react';
 
-import SPheader from "./components/SandwichesP/header/SPheader"
+//import SPheader from "./components/SandwichesP/header/SPheader"
 import SPbody from "./components/SandwichesP/body/SPbody"
 import CartSand from "./components/SandwichesP/body/cartsand"
 import { CartProvider } from "react-use-cart";
@@ -10,10 +10,7 @@ const SandwichesP = () => {
     return (
       <>
         <CartProvider>
-          <SPheader />
-
           <SPbody />
-
           <CartSand />
         </CartProvider>
       </>
