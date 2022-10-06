@@ -17,9 +17,10 @@ export default function SignUp()
   }
 
   const supabaseUrl = 'https://rfjecvakijoqooiktpon.supabase.co';
-    const supabaseKey = process.env.SUPABASE_KEY;
-    const supabase = createClient(supabaseUrl, supabaseKey);
-    console.log(supabase());
+  //const supabaseKey = process.env.SUPABASE_KEY;
+  const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJmamVjdmFraWpvcW9vaWt0cG9uIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NjQ4NTM2MDIsImV4cCI6MTk4MDQyOTYwMn0.Ryea4rE_iOPb49WzUhvHZiOaKMkL_48kNPMVejaeP_M';
+  const supabase = createClient(supabaseUrl, supabaseKey);
+  console.log(supabase);
 
   const handleSubmit = (event) =>
   {
