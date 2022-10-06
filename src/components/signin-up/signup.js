@@ -19,7 +19,7 @@ export default function SignUp()
   const supabaseUrl = 'https://rfjecvakijoqooiktpon.supabase.co';
     const supabaseKey = process.env.SUPABASE_KEY;
     const supabase = createClient(supabaseUrl, supabaseKey);
-    console.log(supabase);
+    console.log(supabase());
 
   const handleSubmit = (event) =>
   {
@@ -30,7 +30,7 @@ export default function SignUp()
     const supabaseUrl = 'https://rfjecvakijoqooiktpon.supabase.co';
     const supabaseKey = process.env.SUPABASE_KEY;
     const supabase = createClient(supabaseUrl, supabaseKey);
-    console.log(supabase);
+    //console.log(supabase);
 
     //let baseURL = "https://rfjecvakijoqooiktpon.supabase.co/api/";
     // https://app.supabase.com/project/rfjecvakijoqooiktpon/storage/buckets/api
