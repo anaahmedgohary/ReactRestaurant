@@ -3,7 +3,26 @@ const { inputs, error } = await supabase
   .insert([
     { email: 'The Shire', password: 554 }
   ])
+/////////////////////////////////////////////////////
+    //const { inputs: newuser, error } = await supabase.from('newuser').select('*')
 
 
-  
+
+//let baseURL = "https://rfjecvakijoqooiktpon.supabase.co/api/";
+    // https://app.supabase.com/project/rfjecvakijoqooiktpon/storage/buckets/api
+
+    // https://react-restaurant-h47a0xx0f-ahmedgohary.vercel.app      //process.env.API_URL;  //process.env.NOW_URL
+    // http://localhost:80/api/
+
+    //axios.post(supabase, inputs
+      // {
+        // headers: {
+        //   //'Content-Type': 'https://react-restaurant-php.vercel.app',
+        //   'Content-type': 'application/x-www-form-urlencoded',
+        //   'Access-Control-Allow-Origin': "*",
+        //   //'Access-Control-Allow-Headers': '*',
+        //   'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept'
+        // }
+    //);
+
 
