@@ -1,5 +1,5 @@
-body {
-  background-image: url(../images/restaurantMural.jpg);
+.abody {
+  background-image: url(/public/images/restaurantMural.jpg);
   background-position: center;
   background-attachment: fixed;
   background-size: cover;

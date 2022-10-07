@@ -21,36 +21,28 @@ const Mheader = (props)=>
     
     return (
       <header>
-        <div className="main-title">شهد</div>
+        {/* <div className="main-title">Restaurant</div> */}
         <div className="main-subtitle">
           <i className="fa-solid fa-pizza-slice fa-2x"></i>
 
-          <h3> أحلي أكل عندنا </h3>
+          <h3>Best Fresh Ingredients</h3>
 
           <i className="fa-solid fa-burger fa-2x"></i>
         </div>
         <nav className="nav main-nav">
-          <span className="nav-element">
-            <a className="" href="/">
+            <a className="nav-element" href="/">
               Home
             </a>
-          </span>
-          <span className="nav-element">
-            <a className="" href="/Sandwiches" target="_blank">
+            <a className="nav-element" href="/Sandwiches">
               Sandwiches
             </a>
-          </span>
-          <span className="nav-element">Dishes</span>
-          <span className="nav-element">Meals</span>
-          <span className="nav-element">Pizza</span>
-          <span className="nav-element">
-            <a className="" href="/signup">
+            <a className="nav-element" href="/signup">
               Sign Up
             </a>
-          </span>
-          <span className="nav-element">Sweets</span>
-          <span className="nav-element">Drinks</span>
-          <span className="nav-element">اتصل بنا</span>
+          
+            <a href='/drinks' className="nav-element">Drinks</a>    
+          
+          <a href='#contactsDiv' className="nav-element">Contact</a>
         </nav>
       </header>
     );  

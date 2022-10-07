@@ -19,10 +19,11 @@
 
 import React from 'react';
 import ReactDOM from "react-dom/client";
+//import $ from "jquery";
+import "bootstrap/dist/css/bootstrap.css";
+import "./Styles/index/index.css";
 
 import App from "./App";
-import "bootstrap/dist/css/bootstrap.css";
-
 
 //const reactContentRoot = document.getElementById("root");
 const root = ReactDOM.createRoot(document.getElementById("root"));

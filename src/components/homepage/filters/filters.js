@@ -38,7 +38,7 @@ function Mfilters(props)
     }
 
     return(
-        <>
+        <div className="container">
             <div className="filter-container transBackg">
                 <div className="main-filter transBackg">
                     <div>
@@ -83,7 +83,7 @@ function Mfilters(props)
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 

@@ -1,5 +1,5 @@
 import React from "react";
-import "./style/sandwich.css"
+import "./style/sandwich.css";
 // import { useState, useEffect } from "react";
 import { useEffect } from "react";
 
@@ -9,11 +9,10 @@ import { useEffect } from "react";
 
 
 
-function Sandwitch()
+export default function Content()
 {
 
-
-    function showImgPop(event)
+  function showImgPop(event)
     {
         let imageClicked = event.target
         let imageClickedSRC = imageClicked.src
@@ -59,10 +58,10 @@ function Sandwitch()
 
 
     return (
-      <>
+      <div className="sandwiches-body">
         <div id="sandBlock" className="PBlock slider transBackg">
           <div className="gb-title-pos">
-            <h2 className="gb-title">ساندوتشات</h2>
+            <h2 className="gb-title">Sandwiches</h2>
           </div>
           <div className="gRowCards">
             <div className="slide card">
@@ -122,8 +121,7 @@ function Sandwitch()
           <img id="imagePopup" className="poped-image" alt="" />
           <div id="popCaption"></div>
         </div>
-      </>
+      </div>
     );
 }
 
-export default Sandwitch

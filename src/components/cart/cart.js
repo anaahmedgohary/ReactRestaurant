@@ -4,9 +4,8 @@ import React from 'react';
 
 import "./style/cartstyle.css"
 
-import SPheader from "../SandwichesP/header/SPheader";
 
-import CartSand from "../SandwichesP/body/cartsand";
+import CartSand from "../sandwiches/body/cartsand";
 import { CartProvider } from "react-use-cart";
 
 const Cart = () =>
@@ -19,9 +18,6 @@ const Cart = () =>
       <div>
         <>
           <CartProvider>
-            <SPheader />
-
-            
 
             <CartSand />
           </CartProvider>

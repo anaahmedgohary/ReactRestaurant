@@ -60,9 +60,6 @@ header {
   background-color: darkolivegreen;
   border-radius: 20%;
   margin: 0.3%;
-}
-.nav .nav-element a {
   text-decoration: none;
-  color: blanchedalmond;
-  align-items: center;
+  scroll-behavior: smooth;
 }/*# sourceMappingURL=hederstyle.css.map */
