@@ -5,8 +5,31 @@
 }
 
 .product-img{
-    max-height: 40%;
+    width: 10rem;
+    max-height: 10%;
+    margin: auto;
     overflow: hidden;
+}
+
+.mycard{
+    width: 15rem;
+    max-width: 400px;
+    //margin: auto;
+    background-color: aqua;
+    @include flexCenter();
+    border: orange solid;
+}
+
+.cards-sec{
+    //width: 80vw;
+    border: white solid;
+    margin: auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 

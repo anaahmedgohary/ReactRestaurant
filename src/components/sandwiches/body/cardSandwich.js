@@ -9,8 +9,8 @@ const CardSandwich = (props) =>
 
 
     return (
-        <div className='container'>
-            <div className="card">
+        <div className='cards-sec'>
+            <div className="card mycard">
                 <img className="card-img-top product-img" src={props.image} alt="" />
                 <div className="card-body">
                     <h5 className="card-title text-center">{props.name}</h5>

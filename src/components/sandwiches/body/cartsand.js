@@ -1,11 +1,11 @@
 import React from "react";
 import { useCart } from "react-use-cart";
-import "./style/productcard/counter.css";
+import "./style/productcard/counter/counter.css";
 
 const CartSand = () =>
 {
     
-    const cartcounter = document.getElementById("cartCounter");
+    //let cartcounter = document.getElementById("cartCounter");
     const {
         isEmpty,
         totalUniqueItems,
@@ -20,7 +20,7 @@ const CartSand = () =>
     
     if (isEmpty)
     {
-        cartcounter.innerText = totalItems;
+        //cartcounter.textContent = 0;
         return <h1 className="cart-empty">Cart is empty!</h1>
     };
 
@@ -47,7 +47,7 @@ const CartSand = () =>
                                 
                                 <tr className="rowcontent">
                                     <td>
-                                        <img src={item.image} alt="" style={{ width: "8rem" }} />
+                                        <img src={item.image} className="cartrowimg" alt="productimage" />
                                     </td>
                                     <td>{item.name}</td>
                                     <th>price</th>

@@ -1,4 +1,27 @@
 .product-img {
-  max-height: 40%;
+  width: 10rem;
+  max-height: 10%;
+  margin: auto;
   overflow: hidden;
+}
+
+.mycard {
+  width: 15rem;
+  max-width: 400px;
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: orange solid;
+}
+
+.cards-sec {
+  border: white solid;
+  margin: auto;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
 }/*# sourceMappingURL=style.css.map */

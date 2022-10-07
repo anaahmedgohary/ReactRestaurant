@@ -73,7 +73,9 @@
 .mytablebody {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   margin: auto;
+  border-bottom: 15px solid;
 }
 
 .rowcontent {
@@ -81,15 +83,7 @@
   flex-wrap: wrap;
   flex-direction: column;
   margin: auto;
-}
-
-.order-sheet {
-  background-color: greenyellow;
-  text-align: center;
-}
-
-.table-headers {
-  text-align: center;
+  margin-bottom: 5%;
 }
 
 .item-qty {
@@ -99,4 +93,11 @@
 .total-div {
   background-color: whitesmoke;
   border-radius: 40px;
+  width: 80%;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+
+.cartrowimg {
+  width: 50px;
 }/*# sourceMappingURL=counter.css.map */
