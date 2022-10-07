@@ -9,8 +9,8 @@ const CardSandwich = (props) =>
 
 
     return (
-        <>
-            <div className="card" style={{ width: "18rem" }}>
+        <div className='container'>
+            <div className="card">
                 <img className="card-img-top product-img" src={props.image} alt="" />
                 <div className="card-body">
                     <h5 className="card-title text-center">{props.name}</h5>
@@ -23,7 +23,7 @@ const CardSandwich = (props) =>
                     </button>
                 </div>
             </div>
-        </>
+        </div>
     );
 }
 

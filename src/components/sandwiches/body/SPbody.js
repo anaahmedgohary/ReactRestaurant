@@ -14,13 +14,6 @@ const SPbody = () =>
 
   return (
     <div className="spbody">
-      {/* <div id="viewCart">
-        <a id="viewCartBtn" href="/cart" title="View Cart">
-          <img className="carticon" src="./images/carticon2.jpg" alt="" />
-        </a>
-        <p id="cartCounter">0</p>
-      </div> */}
-
       <div className="container py-4 prod-cards">
         <div className="row justify-content-center">
           {dataSandwich.allSandwiches.map((item, index) => {
