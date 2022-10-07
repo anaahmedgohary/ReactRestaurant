@@ -10,7 +10,22 @@ import "./style/style.css"
 const Mfooter = (props) =>
 {
 
+  function copyToClipboard(text)
+  {
+    const sampleTextarea = document.createElement("textarea");
+    document.body.appendChild(sampleTextarea);
+    sampleTextarea.value = text; //save main text in it
+    sampleTextarea.select(); //select textarea contenrs
+    document.execCommand("copy");
+    document.body.removeChild(sampleTextarea);
+  }
 
+  function myFunction(e)
+  {
+    const copyText = $(e.target).parent().find("a").text();
+    copyToClipboard(copyText);
+    alert(`copied ${$(e.target).parent().find("a").text()}`);
+  }
 
   
 
@@ -21,7 +36,7 @@ const Mfooter = (props) =>
         {/* <div className="footer-title">
           Resturant
         </div> */}
-        <div className="above-icon">Reach us</div>
+        <div className="above-icon">Reach Us!</div>
         <div className="fotr-icon-div" id='contactsDiv'>
           <a href="https://wa.me/201000267277">
             <img className="footer-icon" src={require("./images/whatsapp-logo.png")} title="whatsapp" alt='' /></a>
@@ -43,7 +58,7 @@ const Mfooter = (props) =>
             <div className='num-div'>
               <a href="tel:+201000267277" className='btn btn-info' title='CALL NOW'>+201000555555</a>
               <button
-                onClick={(e) => { alert(`copied ${$(e.target).parent().find("a").text()}`)}}
+                onClick={myFunction}
                 className='copy-num btn btn-success'
                 title='copy to clipboard'>
                 copy
@@ -51,11 +66,14 @@ const Mfooter = (props) =>
             </div>
             <div className='num-div'>
               <a href="tel:+201000267277" className='btn btn-info' title='CALL NOW'>+201000444444</a>
-              <button className='copy-num btn btn-success' title='copy to clipboard'>copy</button>
+              <button className='copy-num btn btn-success' title='copy to clipboard'
+                onClick={myFunction}>
+                copy
+              </button>
             </div>
             <div className='num-div'>
               <a href="tel:+201000267277" className='btn btn-info' title='CALL NOW'>+201000333333</a>
-              <button className='copy-num btn btn-success' title='copy to clipboard'>copy</button>
+              <button className='copy-num btn btn-success' title='copy to clipboard' onClick={myFunction}>copy</button>
             </div>
           </div>
         </div>

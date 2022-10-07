@@ -24,24 +24,15 @@ const Mheader = (props)=>
         {/* <div className="main-title">Restaurant</div> */}
         <div className="main-subtitle">
           <i className="fa-solid fa-pizza-slice fa-2x"></i>
-
           <h3>Best Fresh Ingredients</h3>
-
           <i className="fa-solid fa-burger fa-2x"></i>
         </div>
         <nav className="nav main-nav">
-            <a className="nav-element" href="/">
-              Home
-            </a>
-            <a className="nav-element" href="/Sandwiches">
-              Sandwiches
-            </a>
-            <a className="nav-element" href="/signup">
-              Sign Up
-            </a>
-          
-            <a href='/drinks' className="nav-element">Drinks</a>    
-          
+          <a href="/" className="nav-element">Home</a>
+          <a href="/sandwiches" className="nav-element">Sandwiches</a>
+          <a href='/drinks' className="nav-element">Drinks</a>
+          <a href='/meals' className="nav-element">Meals</a>
+            <a className="nav-element" href="/signup">Sign Up</a>
           <a href='#contactsDiv' className="nav-element">Contact</a>
         </nav>
       </header>

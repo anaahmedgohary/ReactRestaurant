@@ -54,13 +54,18 @@ function Mfilters(props)
                         <input id="checkBox1" className="filter-checkbox" type="checkbox"/>
                     </div>
                     <div className="filter-elmnt">
-                        <button className="btn btn-secondary">Dishes</button>
-                        <input id="checkBox2" className="filter-checkbox" type="checkbox"/>
+                        <button className="btn btn-secondary">Drinks</button>
+                        <input id="checkBox7" className="filter-checkbox" type="checkbox" />
                     </div>
                     <div className="filter-elmnt">
                         <button className="btn btn-secondary">Meals</button>
-                        <input  id="checkBox3" className="filter-checkbox" type="checkbox"/>
+                        <input id="checkBox3" className="filter-checkbox" type="checkbox" />
                     </div>
+                    {/* <div className="filter-elmnt">
+                        <button className="btn btn-secondary">Dishes</button>
+                        <input id="checkBox2" className="filter-checkbox" type="checkbox"/>
+                    </div>
+                    
                     <div className="filter-elmnt">
                         <button className="btn btn-secondary">Pizza</button>
                         <input id="checkBox4" className="filter-checkbox" type="checkbox" />
@@ -73,14 +78,11 @@ function Mfilters(props)
                         <button className="btn btn-secondary">Sweets</button>
                         <input id="checkBox6" className="filter-checkbox" type="checkbox"/>
                     </div>
-                    <div className="filter-elmnt">
-                        <button className="btn btn-secondary">Drinks</button>
-                        <input id="checkBox7" className="filter-checkbox" type="checkbox"/>
-                    </div>
+                    
                     <div className="filter-elmnt">
                         <button className="btn btn-secondary">Famiyl Meals</button>
                         <input id="checkBox8" className="filter-checkbox" type="checkbox"/>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>

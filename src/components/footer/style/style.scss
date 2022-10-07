@@ -32,6 +32,7 @@ $backLG001: radial-gradient(circle farthest-side, #fceabb, #f8b500);
     @include flexCentre;
     margin-top: 10%;
     font-size: 2rem;
+    color: white;
 }
 
 .fotr-icon-div {
@@ -66,13 +67,26 @@ $backLG001: radial-gradient(circle farthest-side, #fceabb, #f8b500);
     }
 
     .call-label {
-        font-size: 2rem;
-        font-weight: bold;
+        font-size: 1.5rem;
+        color: white;
+        border: 8px solid;
+        border-color: rgb(123, 63, 63);
+        border-bottom: none;
+        border-radius: 29px 29px 30px 30px;
+        padding: 1%;
+        padding-bottom: 0%;
+        background: greenyellow;
+        -webkit-text-stroke-width: 0.9px;
+        -webkit-text-stroke-color: black;
     }
 
     .phone-numbers{
         display: grid;
         gap: 15px;
+        border: 8px solid;
+        border-radius: 40px 4px;
+        border-color: rgb(123, 63, 63);
+        padding: 2%;
 
         .num-div{
             @include flexCentre;
