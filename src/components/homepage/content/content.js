@@ -69,36 +69,36 @@ export default function Content()
               <img
                 onClick={showImgPop}
                 className="cat-row-image"
-                src={require("./images/1Sandwiches.jpg")}
-                title="طعمية"
-                alt="طعمية"
+                src={require("./images/burger.JPG")}
+                title="burger"
+                alt="burger"
               />
             </div>
             <div className="slide card">
               <img
                 onClick={showImgPop}
                 className="cat-row-image"
-                src={require("./images/2Sandwiches.jpg")}
-                title="جبنة رومي"
-                alt="جبنة رومي"
+                src={require("./images/grilled cheese.jpg")}
+                title="grilled cheese"
+                alt="grilled cheese"
               />
             </div>
             <div className="slide card">
               <img
                 onClick={showImgPop}
                 className="cat-row-image"
-                title="شاورما"
-                src={require("./images/3Sandwiches.jpg")}
-                alt="شاورما"
+                title="shawarma"
+                src={require("./images/shawarma.jpg")}
+                alt="shawarma"
               />
             </div>
             <div className="slide card">
               <img
                 onClick={showImgPop}
                 className="cat-row-image"
-                title="لحمة مفرومة"
-                src={require("./images/5Sandwiches.jpg")}
-                alt="لحمة مفرومة"
+                title="burrito"
+                src={require("./images/burrito.jpg")}
+                alt="burrito"
               />
             </div>
             <div className="viewAll-div">
