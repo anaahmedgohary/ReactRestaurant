@@ -1,9 +1,6 @@
 
 
-import "./images/tamiea.jpg";
-import "./images/koshary.jpg";
-import "./images/fool.jpg";
-import "./images/eggs-tomato.jpg";
+
 
 const DataSandwich = {
     allSandwiches: [

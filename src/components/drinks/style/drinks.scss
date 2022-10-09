@@ -1,16 +1,78 @@
 
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-
-
-
-#drinks-body{
-    margin: 10% 0 10% 0;
+@mixin gridCenter {
+    display: grid;
+    justify-content: center;
+    align-items: center;
 }
 
 
 
 
+#drinks-body{
+    margin: 0% auto 0% auto;
+    background: linear-gradient(white, skyblue, white);
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.forhot{
+    background: linear-gradient(0deg, orange, white,white, goldenrod);
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.forcold{
+    background-attachment: fixed;
+    background-position: center;
+}
+
+
+.hot-drinks-title{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
 
 .drinks-sec{
     width: 100%;
+    padding-bottom: 10%;
+}
+
+
+.drink-posts-container{
+    @include flexCenter();
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+
+        
+
+    .drink-post {
+        @include gridCenter();
+        border: solid;
+        text-align: center;
+        max-width: 10rem;
+        padding: 2%;
+
+
+        .drink-name{
+            font-size: 1rem;
+            text-align: center;
+        }
+
+        .post-img{
+            width: 5rem;
+            height: 5rem;
+            display: flex;
+            border: solid;
+            margin: auto;
+        }
+    }
 }

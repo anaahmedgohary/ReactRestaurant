@@ -1,0 +1,22 @@
+function hotDrinks(props) {
+        DrinksData.hotdrinks.map((item, index) =>
+        {
+            // let name = DrinksData.hotdrinks.name;
+            // let img = DrinksData.hotdrinks.img;
+             //let size = DrinksData.hotdrinks.size;
+            // let sugar = DrinksData.hotdrinks.sugar;
+            // let price = DrinksData.hotdrinks.price;
+            return (
+                <div>
+                    <div>name: {item.name}</div>
+                    <div>
+                        <img src={item.img} alt="" />
+                    </div>
+                    <div>Size: {item.size}</div>
+                    <div>Sugar: {item.sugar}</div>
+                    <div>Price: {item.price}</div>
+                </div>
+            )
+
+        })
+    }

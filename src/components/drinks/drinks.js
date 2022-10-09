@@ -1,18 +1,59 @@
 import React from "react";
 import "./style/drinks.css";
 
+import DrinksData from "./drinks-data";
+import DrinkPost from "./drink-post";
+
 export default function Drinks ()
 { 
+    //let size = DrinksData.hotdrinks["size"];
+
+    
     
     return (
-        <div className="container" id="drinks-body">
-            <div className="container">
-                <section className="drinks-sec container" id="hot-drink">
-                    <h2>Hot Drinks</h2>
-                    <button className="btn btn-danger">oooooo</button>
+        <div className="" id="drinks-body">
+            <div>
+                <section className="drinks-sec forhot" id="hot-drink">
+                    <h2 className="hot-drinks-title">Hot Drinks</h2>
+                    <div className="drink-posts-container">
+                        {DrinksData.hotdrinks.map((item, index) =>
+                            {
+                                return (
+                                    <DrinkPost
+                                        name={item.name}
+                                        img={item.img}
+                                        size={item.size}
+                                        sugar={item.sugar}
+                                        price={item.price}
+                                        item={item}
+                                        key={index}
+                                    />
+                                )
+                            })}
+                    </div>
+
+
+
+
                 </section>
-                <section className="drinks-sec container" id="cold-drink">
-                    <h2>Cold Drinks</h2>
+                <section className="drinks-sec forcold container" id="cold-drink">
+                    <h2 className="hot-drinks-title">Cold Drinks</h2>
+                    <div className="drink-posts-container">
+                        {DrinksData.colddrinks.map((item, index) =>
+                        {
+                            return (
+                                <DrinkPost
+                                    name={item.name}
+                                    img={item.img}
+                                    size={item.size}
+                                    sugar={item.sugar}
+                                    price={item.price}
+                                    item={item}
+                                    key={index}
+                                />
+                            )
+                        })}
+                    </div>
                 </section>
             </div>
 
