@@ -14,22 +14,28 @@
 .mycard{
     width: 15rem;
     max-width: 400px;
+    min-height: 19rem;
     //margin: auto;
-    background-color: aqua;
+    background-color: rgb(255, 186, 174);
     @include flexCenter();
     border: orange solid;
 }
 
 .cards-sec{
-    //width: 80vw;
-    border: white solid;
-    margin: auto;
+    min-width: 11rem;
+    width: 20vw;
+    min-height: 20rem;
+    max-height: 31rem;
+    //border: white solid;
+    margin-inline: auto;
     padding: 0;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
-    flex-direction: row;
+    img{
+        height: 6rem;
+    }
 }
 
 

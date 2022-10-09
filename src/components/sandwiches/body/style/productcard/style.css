@@ -8,7 +8,8 @@
 .mycard {
   width: 15rem;
   max-width: 400px;
-  background-color: aqua;
+  min-height: 19rem;
+  background-color: rgb(255, 186, 174);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,12 +17,17 @@
 }
 
 .cards-sec {
-  border: white solid;
-  margin: auto;
+  min-width: 11rem;
+  width: 20vw;
+  min-height: 20rem;
+  max-height: 31rem;
+  margin-inline: auto;
   padding: 0;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
-  flex-direction: row;
+}
+.cards-sec img {
+  height: 6rem;
 }/*# sourceMappingURL=style.css.map */

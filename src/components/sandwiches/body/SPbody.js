@@ -15,7 +15,7 @@ const SPbody = () =>
   return (
     <div className="spbody">
       <div className="container py-4 prod-cards">
-        <div className="row justify-content-center">
+        <div className="row justify-content-center sandwich-card-container">
           {dataSandwich.allSandwiches.map((item, index) => {
             return (
               <CardSandwich
