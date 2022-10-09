@@ -8,6 +8,7 @@ import SignUp from "./components/signin-up/signup";
 import Sandwiches from "./sandwiches"
 import CartP from "./CartP";
 import Drinks from './components/drinks/drinks';
+import Meals from './components/meals/meals';
 
 
 
@@ -22,6 +23,7 @@ const App = () => {
           <Route path="/sandwiches" element={<Sandwiches />} />
           <Route path="/cart" element={<CartP />} />
           <Route path="/drinks" element={<Drinks />} />
+          <Route path="/meals" element={<Meals />} />
         </Routes>
         <Mfooter />
       </Router>
