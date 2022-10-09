@@ -2,7 +2,7 @@ import React from 'react';
 
 //import Mheader from './components/header/header';
 //import Test from "./footer/footer"
-import Mfilters from "./components/homepage/filters/filters";
+//import Mfilters from "./components/homepage/filters/filters";
 //import Main from './components/homepage/main';
 import Content from './components/homepage/content/content';
 //import Mfooter from "./components/footer/Footer";
@@ -10,16 +10,9 @@ import Content from './components/homepage/content/content';
 const Home = () => {
     return (
       <div>
-        
-        <div>
-          <Mfilters />
-        </div>
         <div>
           <Content />
         </div>
-        {/* <div>
-          <Main />
-        </div> */}
       </div>
     );
 }

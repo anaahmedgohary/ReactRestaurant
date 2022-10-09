@@ -4,8 +4,8 @@
 }
 
 header {
-  background-image: url(/public/images/bachd-2.png);
-  background-color: rgba(0, 0, 0, 0.75);
+  background-image: url(/public/images/pink-threads.png);
+  background-color: rgba(0, 0, 0, 0.45);
   background-blend-mode: multiply;
   background-attachment: fixed;
   background-size: cover;
@@ -65,7 +65,7 @@ header {
   font-family: "Comforter Brush", cursive;
   text-align: center;
   -webkit-text-fill-color: transparent;
-  background: linear-gradient(black, rgba(223, 236, 153, 0.689), black);
+  background: linear-gradient(rgb(255, 0, 0), rgba(223, 236, 153, 0.689), rgb(255, 255, 255));
   -webkit-background-clip: text;
           background-clip: text;
   text-decoration: none;
@@ -74,8 +74,6 @@ header {
 }
 .nav .nav-element:hover {
   background: rgba(255, 255, 255, 0.242);
-  color: linear-gradient(black, darkolivegreen, black);
-  -webkit-text-fill-color: goldenrod;
-  background-clip: unset;
+  -webkit-text-fill-color: black;
   border-radius: 100px;
 }/*# sourceMappingURL=hederstyle.css.map */

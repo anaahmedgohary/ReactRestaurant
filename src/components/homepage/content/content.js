@@ -2,6 +2,7 @@ import React from "react";
 import "./style/content.css";
 // import { useState, useEffect } from "react";
 import { useEffect } from "react";
+// import strawberry from "./images/strawberry6.svg";
 
 
 
@@ -61,11 +62,10 @@ export default function Content()
       <div className="sandwiches-body">
         <div id="sandBlock" className="PBlock slider transBackg">
           <div className="gb-title-pos">
-            <h2 className="gb-title">Sandwiches</h2>
+            <h2 className="gb-title">Features</h2>
           </div>
           <div className="gRowCards">
-            <div className="slide card">
-              {/* <img src={require('/images/image-name.png')} /> */}
+            <div className="slide">
               <img
                 onClick={showImgPop}
                 className="cat-row-image"
@@ -74,7 +74,7 @@ export default function Content()
                 alt="burger"
               />
             </div>
-            <div className="slide card">
+            <div className="slide">
               <img
                 onClick={showImgPop}
                 className="cat-row-image"
@@ -83,7 +83,9 @@ export default function Content()
                 alt="grilled cheese"
               />
             </div>
-            <div className="slide card">
+            <div className="slide">
+              
+              {/* <div style={{ background: "black" }}><img src={strawberry} alt="" style={{background:"unset"}} /></div> */}
               <img
                 onClick={showImgPop}
                 className="cat-row-image"
@@ -92,7 +94,7 @@ export default function Content()
                 alt="shawarma"
               />
             </div>
-            <div className="slide card">
+            <div className="slide">
               <img
                 onClick={showImgPop}
                 className="cat-row-image"
@@ -103,12 +105,31 @@ export default function Content()
             </div>
             <div className="viewAll-div">
               <a className="viewAll-link" href="/Sandwiches" target="_blank">
-                <img
+                View all Sandwiches
+                {/* <img
                   className="viewAll-img"
                   title="More Sandwiches"
                   src={require("./images/viewall5.jpg")}
                   alt="More Sandwiches"
-                />
+                /> */}
+              </a>
+              <a className="viewAll-link" href="/drinks" target="_blank">
+                View all Drinks
+                {/* <img
+                  className="viewAll-img"
+                  title="More Sandwiches"
+                  src={require("./images/viewall5.jpg")}
+                  alt="More Sandwiches"
+                /> */}
+              </a>
+              <a className="viewAll-link" href="/meals" target="_blank">
+                View all Meals
+                {/* <img
+                  className="viewAll-img"
+                  title="More Sandwiches"
+                  src={require("./images/viewall5.jpg")}
+                  alt="More Sandwiches"
+                /> */}
               </a>
             </div>
           </div>

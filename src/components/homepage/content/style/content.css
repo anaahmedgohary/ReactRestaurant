@@ -6,28 +6,29 @@
   background-image: linear-gradient(to right, #fffbd5, #b20a2c);
 }
 
-.cat-row-image {
-  width: 40vw;
-}
-
 .gRowCards {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  gap: 40px;
   background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
-  margin-bottom: 10%;
+  background-attachment: fixed;
   padding-left: 1%;
   padding-right: 1%;
 }
-.gRowCards img {
-  padding: 2%;
-  border-radius: 10%;
+.gRowCards .slide .cat-row-image {
+  min-width: 300px;
+  max-width: 500px;
+  max-height: 300px;
+  margin-inline: auto;
   opacity: 0.9;
+  transition: 600ms;
 }
-.gRowCards img:hover {
+.gRowCards .slide .cat-row-image:hover {
   opacity: 1;
-  border-radius: 5%;
+  border-radius: 26px;
+  cursor: pointer;
 }
 
 .show-popup {
@@ -102,11 +103,22 @@
   margin: auto;
   display: flex;
   justify-content: center;
+  gap: 20px;
   background-color: transparent;
 }
 .viewAll-div:hover {
   background-color: rgba(123, 201, 237, 0.38);
   border-radius: 88px 88px 2220px 2220px;
+}
+.viewAll-div .viewAll-link {
+  text-decoration: none;
+  color: white;
+  padding-inline: 1%;
+  transition: 600ms;
+}
+.viewAll-div .viewAll-link:hover {
+  background-color: yellowgreen;
+  border-radius: 100px;
 }
 .viewAll-div .viewAll-link .viewAll-img {
   width: 11rem;

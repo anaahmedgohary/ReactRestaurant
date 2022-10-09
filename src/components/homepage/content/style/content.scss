@@ -27,28 +27,37 @@ $wraperColor: linear-gradient(to right, #fffbd5, #b20a2c);
 }
 
 
-.cat-row-image {
-    width: 40vw;
-}
 
 .gRowCards {
     @include flexCenterWrap;
+    gap: 40px;
     background-image: $backColor;
-    margin-bottom: 10%;
+    background-attachment: fixed;
+    //margin-bottom: 10%;
     padding-left: 1%;
     padding-right: 1%;
 
-    img {
-        padding: 2%;
-        border-radius: 10%;
+    .slide{
+
+        .cat-row-image {
+        //padding: 2%;
+        min-width: 300px;
+        //min-height: 300px;
+        max-width: 500px;
+        max-height: 300px;
+        margin-inline: auto;
         opacity: 0.9;
+        transition: 600ms;
+
 
         &:hover {
             opacity: 1;
-            border-radius: 5%;
-
+            border-radius: 26px;
+            cursor: pointer;
+        }
         }
     }
+    
 }
 
 
@@ -125,6 +134,7 @@ $wraperColor: linear-gradient(to right, #fffbd5, #b20a2c);
     margin: auto;
     display: flex;
     justify-content: center;
+    gap: 20px;
     background-color: transparent;
 
     &:hover {
@@ -135,6 +145,15 @@ $wraperColor: linear-gradient(to right, #fffbd5, #b20a2c);
     ;
 
     .viewAll-link {
+        text-decoration: none;
+        color: white;
+        padding-inline: 1%;
+        transition: 600ms;
+
+        &:hover{
+            background-color: yellowgreen;
+            border-radius: 100px;
+        }
 
         .viewAll-img {
             width: 11rem;
