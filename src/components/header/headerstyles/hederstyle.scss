@@ -73,24 +73,26 @@ header {
 
 .nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     gap: 20px;
     flex-wrap: wrap;
-    margin: 05% 05% 0% 05%;
+    margin: 05% auto 0% auto;
     padding-bottom: 6%;
 
     .nav-element {
-        font-weight: bolder;
-        font-size: 1.8rem;
+        font-size: 3.2rem;
+        min-width: 30%;
         font-family: 'Comforter Brush', cursive;
-        padding: 01%;
+        text-align: center;
+        //padding: 01%;
         -webkit-text-fill-color: transparent;
         //background: linear-gradient(black, rgba(85, 107, 47, 0.689), black);
         background: linear-gradient(black, rgba(223, 236, 153, 0.689), black);
         background-clip: text;
         text-decoration: none;
         scroll-behavior: smooth;
+        transition: 600ms ease-out;
         &:hover{
             background: rgba(255, 255, 255, 0.242);
             color: linear-gradient(black, darkolivegreen, black);

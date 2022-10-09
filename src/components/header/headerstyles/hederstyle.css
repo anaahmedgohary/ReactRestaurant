@@ -52,24 +52,25 @@ header {
 
 .nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   gap: 20px;
   flex-wrap: wrap;
-  margin: 5% 5% 0% 5%;
+  margin: 5% auto 0% auto;
   padding-bottom: 6%;
 }
 .nav .nav-element {
-  font-weight: bolder;
-  font-size: 1.8rem;
+  font-size: 3.2rem;
+  min-width: 30%;
   font-family: "Comforter Brush", cursive;
-  padding: 1%;
+  text-align: center;
   -webkit-text-fill-color: transparent;
   background: linear-gradient(black, rgba(223, 236, 153, 0.689), black);
   -webkit-background-clip: text;
           background-clip: text;
   text-decoration: none;
   scroll-behavior: smooth;
+  transition: 600ms ease-out;
 }
 .nav .nav-element:hover {
   background: rgba(255, 255, 255, 0.242);
