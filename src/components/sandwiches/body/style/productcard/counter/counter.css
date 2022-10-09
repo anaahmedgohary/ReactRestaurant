@@ -1,6 +1,10 @@
+.cart-div {
+  background-color: white;
+}
+
 #viewCart {
   position: absolute;
-  right: -18%;
+  right: 0%;
   top: 50%;
   display: flex;
   justify-content: center;
@@ -8,17 +12,17 @@
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  border: solid goldenrod;
-  background-color: green;
   width: 6rem;
   height: 6rem;
+  border-radius: 50%;
   position: fixed;
   bottom: 60%;
+  overflow: hidden;
 }
 #viewCart:hover {
   right: 0%;
   transition: 1000ms;
-  background-color: black;
+  background-color: transparent;
 }
 
 #viewCartBtn {
@@ -65,7 +69,11 @@
 #thetable {
   width: 80vw;
   margin: auto;
-  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
   background-color: rgb(231, 231, 139);
   text-align: center;
 }

@@ -1,13 +1,19 @@
 
 
-// .spbody {
-//     display: flex;
-// }
+.spbody {
+    background-color:  white;
+}
 
-.sandwich-card-container{
+
+
+.sandwich-cards-container{
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    gap: 20px;
     flex-wrap: wrap;
+    flex-direction: row;
+    border: solid greenyellow;
 }
 

@@ -26,7 +26,7 @@ const CartSand = () =>
 
   return (
     
-    <section className="py-4 container">
+    <section className="py-4 cart-div">
           
         <div id="viewCart">
             <a id="viewCartBtn" href="/cart" title="View Cart">

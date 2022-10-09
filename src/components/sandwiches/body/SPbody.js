@@ -15,17 +15,19 @@ const SPbody = () =>
   return (
     <div className="spbody">
       <div className="container py-4 prod-cards">
-        <div className="row justify-content-center sandwich-card-container">
+        <div className="sandwich-cards-container">
           {dataSandwich.allSandwiches.map((item, index) => {
             return (
-              <CardSandwich
-                image={item.image}
-                name={item.name}
-                price={item.price}
-                description={item.description}
-                item={item}
-                key={index}
-              />
+              <div>
+                  <CardSandwich
+                    image={item.image}
+                    name={item.name}
+                    price={item.price}
+                    description={item.description}
+                    item={item}
+                    key={index}
+                  />
+                </div>
             );
           })}
         </div>
