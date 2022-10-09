@@ -1,43 +1,39 @@
-
-
-
-
 const DataSandwich = {
     allSandwiches: [
         {
             id: 1,
-            name: "tamiea",
-            image: "./images/tamiea.jpg",
+            name: "burger",
+            image: "./images/burger.jpg",
             price: 10,
-            description: "tamiea with bread",
+            description: "burger",
             IDN: "tm001",
         },
 
         {
             id: 2,
-            name: "fool",
-            image: "./images/fool.jpg",
+            name: "burrito",
+            image: "./images/burrito.jpg",
             price: 5,
-            description: "fool with bread",
-            IDN: "fol001",
+            description: "burrito",
+            IDN: "burrito001",
         },
 
         {
             id: 3,
-            name: "koshary",
-            image: "./images/koshary.jpg",
+            name: "grilled cheese",
+            image: "./images/grilledcheese.jpg",
             price: 15,
-            description: "koshary with onion",
-            IDN: "koshary",
+            description: "grilledcheese",
+            IDN: "grilledcheese01",
         },
 
         {
             id: 4,
-            name: "eggs & tomato",
-            image: "./images/eggs-tomato.jpg",
+            name: "shawarma",
+            image: "./images/shawarma.jpg",
             price: 17,
-            description: "eggs with tomatos",
-            IDN: "eggs-tomato",
+            description: "shawarma",
+            IDN: "shawarma01",
         },
     ],
 };
