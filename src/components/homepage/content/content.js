@@ -69,7 +69,7 @@ export default function Content()
               <img
                 onClick={showImgPop}
                 className="cat-row-image"
-                src={require("./images/burger.JPG")}
+                src={require("./images/burger.jpg")}
                 title="burger"
                 alt="burger"
               />
