@@ -56,7 +56,7 @@ const Mfooter = (props) =>
           <p className='call-label'>Call Us!</p>
           <div className='phone-numbers'>
             <div className='num-div'>
-              <a href="tel:+201000267277" className='btn btn-info' title='CALL NOW'>+201000555555</a>
+              <a href="tel:+201000555555" className='btn btn-info' title='CALL NOW'>+201000555555</a>
               <button
                 onClick={myFunction}
                 className='copy-num btn btn-success'
@@ -65,14 +65,14 @@ const Mfooter = (props) =>
               </button>
             </div>
             <div className='num-div'>
-              <a href="tel:+201000267277" className='btn btn-info' title='CALL NOW'>+201000444444</a>
+              <a href="tel:+201000444444" className='btn btn-info' title='CALL NOW'>+201000444444</a>
               <button className='copy-num btn btn-success' title='copy to clipboard'
                 onClick={myFunction}>
                 copy
               </button>
             </div>
             <div className='num-div'>
-              <a href="tel:+201000267277" className='btn btn-info' title='CALL NOW'>+201000333333</a>
+              <a href="tel:+201000333333" className='btn btn-info' title='CALL NOW'>+201000333333</a>
               <button className='copy-num btn btn-success' title='copy to clipboard' onClick={myFunction}>copy</button>
             </div>
           </div>

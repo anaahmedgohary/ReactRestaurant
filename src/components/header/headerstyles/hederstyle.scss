@@ -18,7 +18,6 @@ $trylinear:linear-gradient(black, darkolivegreen, black);
 
 header {
     // @include flexCenter();
-    background-color: $darkgreen;
     background-image: url(/public/images/bachd-2.png);
     background-color: rgba(0, 0, 0, 0.75);
     background-blend-mode: multiply;
@@ -26,11 +25,11 @@ header {
     background-size: cover;
 }
 
+
 .main-title {
     @include flexCenter();
     padding-top: 8%;
     margin-bottom: 2%;
-    font-family: 'Reem Kufi', sans-serif;
     font-size: 15vw;
     font-weight: 900;
     overflow-wrap: break-word;
@@ -50,7 +49,7 @@ header {
     margin-bottom: 5%;
     background: transparent;
     font-size: 0.5rem;
-    font-family: 'Reem Kufi', sans-serif;
+    //font-family: 'Reem Kufi', sans-serif;
     color: darkolivegreen;
 
     h3{
@@ -80,20 +79,20 @@ header {
     padding-bottom: 6%;
 
     .nav-element {
-        font-weight: 900;
+        font-weight: bolder;
         font-size: 1.8rem;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-family: 'Comforter Brush', cursive;
         padding: 01%;
-        border: 0px solid;
         -webkit-text-fill-color: transparent;
-        background: linear-gradient(black, darkolivegreen, black);
+        //background: linear-gradient(black, rgba(85, 107, 47, 0.689), black);
+        background: linear-gradient(black, rgba(223, 236, 153, 0.689), black);
         background-clip: text;
         text-decoration: none;
         scroll-behavior: smooth;
         &:hover{
             background: rgba(255, 255, 255, 0.242);
             color: linear-gradient(black, darkolivegreen, black);
-            -webkit-text-fill-color: $gucciyellow;
+            -webkit-text-fill-color: goldenrod;
             background-clip: unset;
             border-radius: 100px;
         }

@@ -50,7 +50,8 @@
 }
 .phone-num-div .call-label {
   font-size: 1.5rem;
-  color: white;
+  font-weight: bolder;
+  color: gold;
   border: 8px solid;
   border-color: rgb(123, 63, 63);
   border-bottom: none;
@@ -58,8 +59,6 @@
   padding: 1%;
   padding-bottom: 0%;
   background: greenyellow;
-  -webkit-text-stroke-width: 0.9px;
-  -webkit-text-stroke-color: black;
 }
 .phone-num-div .phone-numbers {
   display: grid;

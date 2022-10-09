@@ -10,8 +10,13 @@
 
 .filter-container {
     justify-content: center;
-    //background-color: whitesmoke;
-
+    background-image: url(/public/images/bachd-2.png);
+    background-color: rgba(0, 0, 0, 0.75);
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100vw;
+    margin-inline: auto;
 }
 
 .main-filter {

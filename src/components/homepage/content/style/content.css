@@ -109,11 +109,11 @@
   margin: auto;
   display: flex;
   justify-content: center;
-  background-color: rgba(172, 255, 47, 0.692);
-  border: solid;
+  background-color: transparent;
 }
 .viewAll-div:hover {
-  background-color: rgba(172, 255, 47, 0.863);
+  background-color: rgba(123, 201, 237, 0.38);
+  border-radius: 88px 88px 2220px 2220px;
 }
 .viewAll-div .viewAll-link .viewAll-img {
   width: 11rem;

@@ -24,7 +24,7 @@ const Mheader = (props)=>
         {/* <div className="main-title">Restaurant</div> */}
         <div className="main-subtitle">
           <i className="fa-solid fa-pizza-slice fa-2x"></i>
-          <h3>Best Fresh Ingredients</h3>
+          <h3>𝕭𝖊𝖘𝖙 𝕱𝖗𝖊𝖘𝖍 𝕴𝖓𝖌𝖗𝖊𝖉𝖎𝖊𝖓𝖙𝖘</h3>
           <i className="fa-solid fa-burger fa-2x"></i>
         </div>
         <nav className="nav main-nav">
