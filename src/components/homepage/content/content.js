@@ -78,7 +78,7 @@ export default function Content()
               <img
                 onClick={showImgPop}
                 className="cat-row-image"
-                src="./images/grilled cheese.jpg"
+                src="./images/grilledcheese.jpg"
                 title="grilled cheese"
                 alt="grilled cheese"
               />
