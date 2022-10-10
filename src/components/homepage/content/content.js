@@ -69,7 +69,7 @@ export default function Content()
               <img
                 onClick={showImgPop}
                 className="cat-row-image"
-                src={require("./images/burger.jpg")}
+                src="./images/burger.jpg"
                 title="burger"
                 alt="burger"
               />
@@ -78,7 +78,7 @@ export default function Content()
               <img
                 onClick={showImgPop}
                 className="cat-row-image"
-                src={require("./images/grilled cheese.jpg")}
+                src="./images/grilled cheese.jpg"
                 title="grilled cheese"
                 alt="grilled cheese"
               />
@@ -90,7 +90,7 @@ export default function Content()
                 onClick={showImgPop}
                 className="cat-row-image"
                 title="shawarma"
-                src={require("./images/shawarma.jpg")}
+                src="./images/shawarma.jpg"
                 alt="shawarma"
               />
             </div>
@@ -99,7 +99,7 @@ export default function Content()
                 onClick={showImgPop}
                 className="cat-row-image"
                 title="burrito"
-                src={require("./images/burrito.jpg")}
+                src="./images/burrito.jpg"
                 alt="burrito"
               />
             </div>
@@ -109,7 +109,6 @@ export default function Content()
                 {/* <img
                   className="viewAll-img"
                   title="More Sandwiches"
-                  src={require("./images/viewall5.jpg")}
                   alt="More Sandwiches"
                 /> */}
               </a>
@@ -118,7 +117,6 @@ export default function Content()
                 {/* <img
                   className="viewAll-img"
                   title="More Sandwiches"
-                  src={require("./images/viewall5.jpg")}
                   alt="More Sandwiches"
                 /> */}
               </a>
@@ -127,7 +125,6 @@ export default function Content()
                 {/* <img
                   className="viewAll-img"
                   title="More Sandwiches"
-                  src={require("./images/viewall5.jpg")}
                   alt="More Sandwiches"
                 /> */}
               </a>
