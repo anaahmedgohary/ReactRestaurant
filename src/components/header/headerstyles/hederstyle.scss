@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Comforter+Brush&display=swap');
+// @import url("./Home4nav.svg");
 
 $darkgreen: rgb(96, 129, 46);
 $NavFont: 1.5rem;
@@ -12,7 +14,6 @@ $trylinear:linear-gradient(black, darkolivegreen, black);
     justify-content: center;
     align-items: center;
 }
-
 
 * {
     box-sizing: border-box;
@@ -83,11 +84,10 @@ header {
     .nav-element {
         font-size: 3.2rem;
         min-width: 30%;
-        font-family: 'Comforter Brush', cursive;
+        font-family: 'Alkalami', serif; //'Comforter Brush', cursive;
         text-align: center;
         //padding: 01%;
         -webkit-text-fill-color: transparent;
-        //background: linear-gradient(black, rgba(85, 107, 47, 0.689), black);
         background: linear-gradient(rgb(255, 0, 0), rgba(223, 236, 153, 0.689), rgb(255, 255, 255));
         background-clip: text;
         text-decoration: none;
@@ -99,6 +99,8 @@ header {
             //background-clip: unset;
             border-radius: 100px;
         }
+
+        
 
     }
 }

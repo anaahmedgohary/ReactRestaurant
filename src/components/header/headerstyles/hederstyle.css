@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alkalami&family=Comforter+Brush&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -62,7 +63,7 @@ header {
 .nav .nav-element {
   font-size: 3.2rem;
   min-width: 30%;
-  font-family: "Comforter Brush", cursive;
+  font-family: "Alkalami", serif;
   text-align: center;
   -webkit-text-fill-color: transparent;
   background: linear-gradient(rgb(255, 0, 0), rgba(223, 236, 153, 0.689), rgb(255, 255, 255));
