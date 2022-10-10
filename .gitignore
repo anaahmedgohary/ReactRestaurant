@@ -23,3 +23,6 @@ yarn-debug.log*
 yarn-error.log*
 
 .vercel
+
+# text doc
+/src/components/signin-up/temp.txt

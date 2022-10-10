@@ -36,9 +36,15 @@ export default function SignUp()
     event.preventDefault();
     //axios.defaults.baseURL = process.env.APP_URL
     // process.env.NOW_URL
+    class urls
+    {
+      #value = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJmamVjdmFraWpvcW9vaWt0cG9uIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NjQ4NTM2MDIsImV4cCI6MTk4MDQyOTYwMn0.Ryea4rE_iOPb49WzUhvHZiOaKMkL_48kNPMVejaeP_M';
+      SPAK = this.#value
+    }
     const supabaseUrl = 'https://rfjecvakijoqooiktpon.supabase.co';
     //const supabaseKey = process.env.SUPABASE_KEY;
-    const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJmamVjdmFraWpvcW9vaWt0cG9uIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NjQ4NTM2MDIsImV4cCI6MTk4MDQyOTYwMn0.Ryea4rE_iOPb49WzUhvHZiOaKMkL_48kNPMVejaeP_M';
+    const privates = new urls();
+    const SUPABASE_ANON_KEY = privates.SPAK
     const supabase = createClient(supabaseUrl, SUPABASE_ANON_KEY);
     const { data, error } = await supabase
       .from('newuser')
