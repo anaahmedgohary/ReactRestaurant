@@ -6,10 +6,11 @@
 
 header {
   background-image: url(/public/images/pink-threads.png);
-  background-color: rgba(0, 0, 0, 0.45);
-  background-blend-mode: multiply;
   background-attachment: fixed;
   background-size: cover;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
 }
 
 .main-title {
@@ -36,6 +37,7 @@ header {
   background: transparent;
   font-size: 0.5rem;
   color: darkolivegreen;
+  width: 100%;
 }
 .main-subtitle h3 {
   font-size: 0.5rem;
@@ -55,26 +57,30 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  width: 100%;
+  gap: 60px;
   flex-wrap: wrap;
-  margin: 5% auto 0% auto;
-  padding-bottom: 6%;
+  background-color: black;
+  padding-block: 5%;
 }
 .nav .nav-element {
-  font-size: 3.2rem;
-  min-width: 30%;
+  display: grid;
+  place-items: center;
+  font-size: 2rem;
   font-family: "Alkalami", serif;
-  text-align: center;
-  -webkit-text-fill-color: transparent;
-  background: linear-gradient(rgb(255, 0, 0), rgba(223, 236, 153, 0.689), rgb(255, 255, 255));
-  -webkit-background-clip: text;
-          background-clip: text;
+  padding: 0% 2%;
+  line-height: normal;
   text-decoration: none;
-  scroll-behavior: smooth;
-  transition: 600ms ease-out;
+  transition: 800ms;
+  color: black;
+  min-width: 12rem;
+  height: 3.2rem;
+  box-shadow: 0px 0px 50px 10px rgb(248, 248, 117);
+  background-color: white;
+  color: red;
+  border-radius: 50px 50px;
 }
 .nav .nav-element:hover {
-  background: rgba(255, 255, 255, 0.242);
-  -webkit-text-fill-color: black;
-  border-radius: 100px;
+  box-shadow: 0px 0px 0px 0px white;
+  border-radius: 50px 50px;
 }/*# sourceMappingURL=hederstyle.css.map */
