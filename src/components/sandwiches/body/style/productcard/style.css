@@ -6,14 +6,18 @@
 }
 
 .mycard {
-  width: 15rem;
-  max-width: 400px;
+  min-width: 14rem;
+  max-width: 300px;
   min-height: 19rem;
   background-color: rgb(255, 186, 174);
   display: flex;
   justify-content: center;
   align-items: center;
-  border: orange solid;
+  border: blueviolet solid;
+  box-shadow: 5px 5px 10px;
+}
+.mycard:hover {
+  transform: scale(1.2) translateY(2rem);
 }
 
 .cards-sec {

@@ -5,12 +5,17 @@
 }
 
 header {
-  background-image: url(/public/images/pink-threads.png);
+  background-image: url(./images/lim.png);
+  background-color: rgba(0, 0, 0, 0.45);
+  background-blend-mode: multiply;
   background-attachment: fixed;
   background-size: cover;
+  background-size: contain;
+  background-position-x: center;
+  background-position-y: top;
   display: grid;
-  place-items: center;
-  min-height: 100vh;
+  align-items: end;
+  min-height: 10vh;
 }
 
 .main-title {
@@ -60,8 +65,7 @@ header {
   width: 100%;
   gap: 60px;
   flex-wrap: wrap;
-  background-color: black;
-  padding-block: 5%;
+  padding-block: 2%;
 }
 .nav .nav-element {
   display: grid;
@@ -71,16 +75,32 @@ header {
   padding: 0% 2%;
   line-height: normal;
   text-decoration: none;
-  transition: 800ms;
+  transition: 400ms;
   color: black;
   min-width: 12rem;
   height: 3.2rem;
-  box-shadow: 0px 0px 50px 10px rgb(248, 248, 117);
   background-color: white;
   color: red;
   border-radius: 50px 50px;
 }
 .nav .nav-element:hover {
-  box-shadow: 0px 0px 0px 0px white;
-  border-radius: 50px 50px;
+  background-color: black;
+}
+
+@-webkit-keyframes navLink {
+  50% {
+    box-shadow: 0px 0px 25px 5px;
+  }
+  100% {
+    box-shadow: 0px 0px 0px 0px;
+  }
+}
+
+@keyframes navLink {
+  50% {
+    box-shadow: 0px 0px 25px 5px;
+  }
+  100% {
+    box-shadow: 0px 0px 0px 0px;
+  }
 }/*# sourceMappingURL=hederstyle.css.map */

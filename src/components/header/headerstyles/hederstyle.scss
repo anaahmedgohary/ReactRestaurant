@@ -25,13 +25,19 @@ $trylinear:linear-gradient(black, darkolivegreen, black);
 
 header {
     // @include flexCenter();
-    background-image: url(/public/images/pink-threads.png);
-    // background-color: rgba(0, 0, 0, 0.45);
-    // background-blend-mode: multiply;
+    background-image: url(./images/lim.png);
+     background-color: rgba(0, 0, 0, 0.45);
+    background-blend-mode: multiply;
     background-attachment: fixed;
     background-size: cover;
-    @include gridCenter();
-    min-height: 100vh;
+    background-size: contain;
+    background-position-x: center;
+    background-position-y: top;
+    //background-repeat: no-repeat;
+    //@include gridCenter();
+    display: grid;
+    align-items: end;
+    min-height: 10vh;
 }
 
 
@@ -87,9 +93,9 @@ header {
     //margin: 05% auto 0% auto;
     //padding-bottom: 6%;
     //margin-bottom: 6%;
-    background-color: black;
+    //background-color: black;
     //border: solid green;
-    padding-block: 5%;
+    padding-block: 2%;
 
     .nav-element {
         @include gridCenter();
@@ -103,29 +109,44 @@ header {
         //-webkit-text-fill-color: transparent;
         ///background: linear-gradient(rgb(255, 0, 0), rgba(223, 236, 153, 0.689), rgb(255, 255, 255));
         text-decoration: none;
-        transition: 800ms;
+        transition: 400ms;
         color: black;
         min-width: 12rem;
         height: 3.2rem;
         //box-shadow: 0px 0px 50px 6px pink;
         //border-radius: 100px;
-        box-shadow: 0px 0px 50px 10px rgb(248, 248, 117);
+       // box-shadow: 0px 0px 50px 10px rgb(248, 248, 117);
         background-color: white;
         color: red;
         border-radius: 50px 50px;
+        ///animation: navLink 1s linear 0ms infinite alternate forwards;
         
 
         &:hover{
             
-            box-shadow: 0px 0px 0px 0px white;
-            //background-color: greenyellow;
+            
+            //box-shadow: 0px 0px 0px 0px white;
+            background-color: black;
             //color: red;
-            border-radius: 50px 50px;
+            //border-radius: 50px 50px;
+            //animation:1s 1 forwards;
+            // transition: 800ms;
+            //animation: name duration timing-function delay iteration-count direction fill-mode;
             //border: none;
             
         }
 
         
 
+    }
+}
+
+@keyframes navLink {
+    50%{
+        box-shadow: 0px 0px 25px 5px;
+    }
+
+    100%{
+        box-shadow: 0px 0px 0px 0px;
     }
 }

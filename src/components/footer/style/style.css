@@ -15,7 +15,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 10%;
   font-size: 2rem;
   color: white;
 }
@@ -25,16 +24,16 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin: 10%;
-  margin-top: 0%;
+  padding-inline: 10%;
+  padding-block: 5%;
+  width: 100%;
 }
 .fotr-icon-div a {
-  margin: 5%;
+  flex: 1;
+  text-align: center;
 }
 .fotr-icon-div .footer-icon {
-  width: 8vw;
-  background-color: transparent;
-  border-radius: 10%;
+  width: 3rem;
 }
 
 .phone-num-div {
@@ -51,7 +50,7 @@
 .phone-num-div .call-label {
   font-size: 1.5rem;
   font-weight: bolder;
-  color: gold;
+  color: rgb(30, 30, 30);
   border: 8px solid;
   border-color: rgb(123, 63, 63);
   border-bottom: none;
@@ -61,12 +60,19 @@
   background: greenyellow;
 }
 .phone-num-div .phone-numbers {
-  display: grid;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   gap: 15px;
   border: 8px solid;
   border-radius: 40px 4px;
   border-color: rgb(123, 63, 63);
-  padding: 2%;
+  padding-block: 2%;
+  padding-inline: 1%;
 }
 .phone-num-div .phone-numbers .num-div {
   display: flex;

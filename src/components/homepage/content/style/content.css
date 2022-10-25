@@ -106,10 +106,6 @@
   gap: 20px;
   background-color: transparent;
 }
-.viewAll-div:hover {
-  background-color: rgba(123, 201, 237, 0.38);
-  border-radius: 88px 88px 2220px 2220px;
-}
 .viewAll-div .viewAll-link {
   text-decoration: none;
   color: white;
