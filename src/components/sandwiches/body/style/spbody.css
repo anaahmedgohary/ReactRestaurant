@@ -1,5 +1,5 @@
 .spbody {
-  background-color: white;
+  background-image: linear-gradient(90deg, rgb(200, 100, 30), rgb(167, 219, 240), rgb(175, 223, 241), rgb(200, 100, 30));
 }
 
 .sandwich-cards-container {

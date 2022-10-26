@@ -1,3 +1,14 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
 #drinks-body {
   margin: 0% auto 0% auto;
   background: linear-gradient(white, skyblue, white);
@@ -25,22 +36,29 @@
 .drinks-sec {
   width: 100%;
   padding-bottom: 10%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  width: 100%;
 }
 
 .drink-posts-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  align-items: flex-start;
   flex-wrap: wrap;
+  width: 100%;
   gap: 20px;
 }
 .drink-posts-container .drink-post {
   display: grid;
-  justify-content: center;
-  align-items: center;
+  place-items: center;
   border: solid;
   text-align: center;
+  min-width: 25%;
   max-width: 10rem;
   padding: 2%;
 }

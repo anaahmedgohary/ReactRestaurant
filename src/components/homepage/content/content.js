@@ -3,7 +3,7 @@ import "./style/content.css";
 // import { useState, useEffect } from "react";
 // import { useEffect } from "react";
 // import strawberry from "./images/strawberry6.svg";
-import burger from "./style/images/basically-burger-1.jpg";
+ import burger from "./style/images/basically-burger-1.jpg";
 
 
 import AOS from 'aos';
@@ -80,28 +80,56 @@ export default function Content()
     return (
       <div className="sandwiches-body">
         <div id="sandBlock" className="PBlock slider transBackg">
+
           <div className="gb-title-pos">
             <h2 className="gb-title">Features</h2>
           </div>
+
           <div className="gRowCards">
-            <div className="slide">
-              <img
-                onClick={showImgPop}
-                className="cat-row-image"
-                src={burger}
-                title="burger"
-                alt="burger"
-              />
+
+            
+            <div className="slide slide1">
+              
+                <img
+                  onClick={showImgPop}
+                  className="cat-row-image"
+                  src={burger}
+                  title="burger"
+                  alt="burger"
+                />
+              
+              
+
+              <div className="para-div">
+                <h3>Burger</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore repellat ullam iusto corrupti quas voluptate, at esse, velit quia magnam exercitationem sed nulla, molestias doloribus praesentium facilis ipsam ex quibusdam.
+                </p>
+              </div>
+
             </div>
-            <div className="slide" data-aos="flip-up">
+
+
+
+            <div className="slide slide2" data-aos="flip-up">
+
+              
+
               <img
                 onClick={showImgPop}
                 className="cat-row-image"
                 src="./images/grilledcheese.jpg"
                 title="grilled cheese"
                 alt="grilled cheese"
-                data-aos="fade-right"
+                // data-aos="fade-right"
               />
+              <div className="para-div">
+                <h3>Grilled Cheese</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore repellat ullam iusto corrupti quas voluptate, at esse, velit quia magnam exercitationem sed nulla, molestias doloribus praesentium facilis ipsam ex quibusdam.
+                </p>
+              </div>
+              
             </div>
             {/* <div className="slide">
               <img
@@ -112,18 +140,26 @@ export default function Content()
                 alt="shawarma"
               />
             </div> */}
-            <div className="slide" data-aos="flip-up">
+            <div className="slide slide3" data-aos="flip-up">
               <img
                 onClick={showImgPop}
                 className="cat-row-image"
                 title="burrito"
                 src="./images/burrito.jpg"
                 alt="burrito"
-                data-aos="fade-left"
+                // data-aos='fade-left'
               />
+
+              <div className="para-div">
+                <h3>Burrito</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore repellat ullam iusto corrupti quas voluptate, at esse, velit quia magnam exercitationem sed nulla, molestias doloribus praesentium facilis ipsam ex quibusdam.
+                </p>
+              </div>
+
             </div>
             <div data-aos="fade-down" className="viewAll-div">
-              <a className="viewAll-link" href="/Sandwiches" target="_blank">
+              <a data-aos='fade-left' className="viewAll-link" href="/Sandwiches" target="_blank">
                 View all Sandwiches
                 {/* <img
                   className="viewAll-img"
@@ -139,7 +175,7 @@ export default function Content()
                   alt="More Sandwiches"
                 /> */}
               </a>
-              <a className="viewAll-link" href="/meals" target="_blank">
+              <a data-aos='fade-right' className="viewAll-link" href="/meals" target="_blank">
                 View all Meals
                 {/* <img
                   className="viewAll-img"

@@ -76,7 +76,7 @@ const Mfooter = (props) =>
               </button>
             </div>
             <div className='num-div' data-aos="fade-down">
-              <a href="tel:+201000333333" className='btn btn-info' title='CALL NOW'>+201000333333</a>
+              <a href="tel:+201000333333" className='btn btn-primary' title='CALL NOW'>+201000333333</a>
               <button className='copy-num btn btn-success' title='copy to clipboard' onClick={myFunction}>copy</button>
             </div>
           </div>

@@ -83,13 +83,20 @@ $backLG001: radial-gradient(circle farthest-side, #fceabb, #f8b500);
         color: rgb(30, 30, 30);
         border: 8px solid;
         border-color: rgb(123, 63, 63);
-        border-bottom: none;
+        //border-bottom: none;
+        //border-top: none;
         border-radius: 29px 29px 30px 30px;
         padding: 1%;
-        padding-bottom: 0%;
-        background: greenyellow;
+        //padding-bottom: 0%;
+        background: transparent;
+        overflow: hidden;
         //-webkit-text-stroke-width: 0.9px;
         //-webkit-text-stroke-color: black;
+        animation: rotater 2s linear 1000ms infinite normal forwards;
+        &:hover{
+            animation:paused;
+            border-bottom-color: transparent;
+        }
     }
 
     .phone-numbers{
@@ -99,8 +106,10 @@ $backLG001: radial-gradient(circle farthest-side, #fceabb, #f8b500);
         border: 8px solid;
         border-radius: 40px 4px;
         border-color: rgb(123, 63, 63);
+        border-top-color: transparent;
         padding-block: 2%;
         padding-inline: 1%;
+        
 
         .num-div{
             @include flexCentre;
@@ -110,8 +119,12 @@ $backLG001: radial-gradient(circle farthest-side, #fceabb, #f8b500);
                 font-size: 1.2rem;
                 text-decoration: none;
                 color: unset;
+                background-color: rgb(123, 63, 63);
+                color: rgb(206, 223, 223);
+
                 &:hover{
-                    background-color: azure;
+                    background-color: red;
+                    color: white;
                 }
             }
 
@@ -120,14 +133,18 @@ $backLG001: radial-gradient(circle farthest-side, #fceabb, #f8b500);
         
     }
 }
-
+@keyframes rotater {
+    100%{
+        rotate: 360deg;
+    }
+}
 
 [data-aos="new-animation"] {
   opacity: 0;
   transition-property: transform, opacity;
 
   &.aos-animate {
-    opacity: 0.5;
-    transform: rotate(90deg);
+    opacity: 1;
+    transform: rotate(360deg);
   }
 }

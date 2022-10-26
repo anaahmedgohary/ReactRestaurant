@@ -1,3 +1,14 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
 .gb-title-pos {
   display: flex;
   justify-content: center;
@@ -10,27 +21,57 @@
 .gRowCards {
   display: grid;
   place-items: center;
-  border: solid red;
   gap: 40px;
+  padding-top: 40px;
   background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
   background-attachment: fixed;
   overflow: hidden;
 }
 .gRowCards .slide {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  flex-wrap: wrap;
+}
+.gRowCards .slide .para-div {
+  min-width: 40%;
+  max-width: 44%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.gRowCards .slide .para-div h3 {
+  margin: 0;
+  padding: 2%;
+}
+.gRowCards .slide .para-div p {
+  margin: 0;
+  padding: 2%;
 }
 .gRowCards .slide .cat-row-image {
   min-width: 300px;
-  max-width: 60%;
+  max-width: 40%;
   padding: 0%;
   transition: 600ms;
   box-shadow: 4px 4px 15px red;
+  border-radius: 26px;
 }
 .gRowCards .slide .cat-row-image:hover {
-  border-radius: 26px;
   cursor: pointer;
 }
 
+@media screen and (max-width: 590) {
+  .slide div {
+    flex: 1;
+  }
+  .slide img {
+    flex: 1;
+  }
+}
 .show-popup {
   display: block;
   position: fixed;

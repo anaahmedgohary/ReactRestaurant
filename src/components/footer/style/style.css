@@ -56,11 +56,17 @@
   color: rgb(30, 30, 30);
   border: 8px solid;
   border-color: rgb(123, 63, 63);
-  border-bottom: none;
   border-radius: 29px 29px 30px 30px;
   padding: 1%;
-  padding-bottom: 0%;
-  background: greenyellow;
+  background: transparent;
+  overflow: hidden;
+  -webkit-animation: rotater 2s linear 1000ms infinite normal forwards;
+          animation: rotater 2s linear 1000ms infinite normal forwards;
+}
+.phone-num-div .call-label:hover {
+  -webkit-animation: paused;
+          animation: paused;
+  border-bottom-color: transparent;
 }
 .phone-num-div .phone-numbers {
   width: -webkit-fit-content;
@@ -74,6 +80,7 @@
   border: 8px solid;
   border-radius: 40px 4px;
   border-color: rgb(123, 63, 63);
+  border-top-color: transparent;
   padding-block: 2%;
   padding-inline: 1%;
 }
@@ -87,16 +94,30 @@
   font-size: 1.2rem;
   text-decoration: none;
   color: unset;
+  background-color: rgb(123, 63, 63);
+  color: rgb(206, 223, 223);
 }
 .phone-num-div .phone-numbers .num-div a:hover {
-  background-color: azure;
+  background-color: red;
+  color: white;
 }
 
+@-webkit-keyframes rotater {
+  100% {
+    rotate: 360deg;
+  }
+}
+
+@keyframes rotater {
+  100% {
+    rotate: 360deg;
+  }
+}
 [data-aos=new-animation] {
   opacity: 0;
   transition-property: transform, opacity;
 }
 [data-aos=new-animation].aos-animate {
-  opacity: 0.5;
-  transform: rotate(90deg);
+  opacity: 1;
+  transform: rotate(360deg);
 }/*# sourceMappingURL=style.css.map */

@@ -36,7 +36,7 @@ export default function Drinks ()
 
 
                 </section>
-                <section className="drinks-sec forcold container" id="cold-drink">
+                <section className="drinks-sec forcold" id="cold-drink">
                     <h2 className="hot-drinks-title">Cold Drinks</h2>
                     <div className="drink-posts-container">
                         {DrinksData.colddrinks.map((item, index) =>
