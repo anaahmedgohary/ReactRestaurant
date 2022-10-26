@@ -6,13 +6,16 @@ import "./style/content.css";
 import burger from "./style/images/basically-burger-1.jpg";
 
 
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 
 
 export default function Content()
 {
+
+  AOS.init();
 
   function showImgPop(event)
     {
@@ -29,32 +32,22 @@ export default function Content()
     let imageAlt = imageClicked.alt;
     captionDiv.innerText = imageAlt;
 
-
+      // close when click in empty space
     imageDiv.addEventListener("click", (e) =>
     {
       let imag = document.getElementById("imagePopup");
       if (e.target === imag)
       {
-        console.log('yeaaaa');
+        //console.log('yeaaaa');
         return
       } else { 
-      console.log('nono');
+      //console.log('nono');
       imageDiv.classList.replace("show-popup", "hide-popup");
-    }
-      
-      
+      }
     })
-
-    // close on click anywhere
-    console.log('dddo');
-    // document.addEventListener("click", (e) =>
-    // {
-    //   console.log('dddo')
-    //   //imageDiv.classList.replace("show-popup", "hide-popup");
-    // })
-    
-    }
-
+  }
+  
+    // close button function, classic
     function closePopupImg()
     {
       let imageDiv = document.getElementById("popImageContainer");
@@ -100,13 +93,14 @@ export default function Content()
                 alt="burger"
               />
             </div>
-            <div className="slide">
+            <div className="slide" data-aos="flip-up">
               <img
                 onClick={showImgPop}
                 className="cat-row-image"
                 src="./images/grilledcheese.jpg"
                 title="grilled cheese"
                 alt="grilled cheese"
+                data-aos="fade-right"
               />
             </div>
             {/* <div className="slide">
@@ -118,16 +112,17 @@ export default function Content()
                 alt="shawarma"
               />
             </div> */}
-            <div className="slide">
+            <div className="slide" data-aos="flip-up">
               <img
                 onClick={showImgPop}
                 className="cat-row-image"
                 title="burrito"
                 src="./images/burrito.jpg"
                 alt="burrito"
+                data-aos="fade-left"
               />
             </div>
-            <div className="viewAll-div">
+            <div data-aos="fade-down" className="viewAll-div">
               <a className="viewAll-link" href="/Sandwiches" target="_blank">
                 View all Sandwiches
                 {/* <img

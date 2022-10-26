@@ -1,6 +1,8 @@
 .FOOTER {
   background-image: radial-gradient(circle farthest-side, #fceabb, #f8b500);
   padding-top: 5%;
+  padding-bottom: 5rem;
+  overflow: hidden;
 }
 
 .footer-title {
@@ -17,6 +19,7 @@
   align-items: center;
   font-size: 2rem;
   color: white;
+  text-align: center;
 }
 
 .fotr-icon-div {
@@ -87,4 +90,13 @@
 }
 .phone-num-div .phone-numbers .num-div a:hover {
   background-color: azure;
+}
+
+[data-aos=new-animation] {
+  opacity: 0;
+  transition-property: transform, opacity;
+}
+[data-aos=new-animation].aos-animate {
+  opacity: 0.5;
+  transform: rotate(90deg);
 }/*# sourceMappingURL=style.css.map */

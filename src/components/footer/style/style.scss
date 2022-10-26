@@ -18,7 +18,9 @@ $backLG001: radial-gradient(circle farthest-side, #fceabb, #f8b500);
 
 .FOOTER {
     background-image: $backLG001;
-    padding-top: 5%
+    padding-top: 5%;
+    padding-bottom: 5rem;
+    overflow: hidden;
 }
 
 
@@ -33,6 +35,7 @@ $backLG001: radial-gradient(circle farthest-side, #fceabb, #f8b500);
     //margin-top: 10%;
     font-size: 2rem;
     color: white;
+    text-align: center
 }
 
 .fotr-icon-div {
@@ -116,4 +119,15 @@ $backLG001: radial-gradient(circle farthest-side, #fceabb, #f8b500);
 
         
     }
+}
+
+
+[data-aos="new-animation"] {
+  opacity: 0;
+  transition-property: transform, opacity;
+
+  &.aos-animate {
+    opacity: 0.5;
+    transform: rotate(90deg);
+  }
 }

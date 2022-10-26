@@ -4,14 +4,17 @@
   align-items: center;
   border: solid;
   background-image: linear-gradient(to right, #fffbd5, #b20a2c);
+  overflow: hidden;
 }
 
 .gRowCards {
   display: grid;
   place-items: center;
   border: solid red;
+  gap: 40px;
   background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
   background-attachment: fixed;
+  overflow: hidden;
 }
 .gRowCards .slide {
   text-align: center;
@@ -21,12 +24,11 @@
   max-width: 60%;
   padding: 0%;
   transition: 600ms;
-  box-shadow: 5px 5px 10px wheat;
+  box-shadow: 4px 4px 15px red;
 }
 .gRowCards .slide .cat-row-image:hover {
   border-radius: 26px;
   cursor: pointer;
-  transform: scale(1.1);
 }
 
 .show-popup {
@@ -102,7 +104,7 @@
   display: flex;
   justify-content: center;
   gap: 20px;
-  background-color: transparent;
+  padding-top: 10%;
 }
 .viewAll-div .viewAll-link {
   text-decoration: none;

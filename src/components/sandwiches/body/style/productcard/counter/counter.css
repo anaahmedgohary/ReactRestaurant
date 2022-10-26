@@ -1,5 +1,6 @@
 .cart-div {
   background-color: white;
+  overflow: hidden;
 }
 
 #viewCart {
@@ -108,4 +109,10 @@
 
 .cartrowimg {
   width: 50px;
+  transition: all 500ms;
+}
+.cartrowimg:hover {
+  scale: 1.9;
+  translate: 0 2rem;
+  z-index: 1;
 }/*# sourceMappingURL=counter.css.map */
