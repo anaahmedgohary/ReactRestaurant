@@ -38,7 +38,7 @@ const Mfooter = (props) =>
         </div> */}
         <div className="above-icon">Reach Us!</div>
         <div className="fotr-icon-div" id='contactsDiv'>
-          <a href="https://wa.me/201000267277">
+          <a href="https://wa.me/201000212212">
             <img className="footer-icon" src={require("./images/whatsapp-logo.png")} title="whatsapp" alt='' /></a>
           <a href="http://www.facebook.com" >
             <img className="footer-icon" src={require("./images/facebook-logo.png")} title="facebook" alt='' /></a>

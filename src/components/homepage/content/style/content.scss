@@ -10,6 +10,10 @@
     align-items: center;
     flex-wrap: wrap;
 }
+@mixin gridCenter{
+    display:grid;
+    place-items: center;
+}
 
 $backColor: linear-gradient(to right, #0f0c29, #302b63, #24243e);
 $wraperColor: linear-gradient(to right, #fffbd5, #b20a2c);
@@ -29,31 +33,42 @@ $wraperColor: linear-gradient(to right, #fffbd5, #b20a2c);
 
 
 .gRowCards {
-    @include flexCenterWrap;
-    gap: 40px;
+    @include gridCenter();
+    //grid-template-columns: 1fr 1fr;
+    border: solid red;
+    //gap: 40px;
     background-image: $backColor;
     background-attachment: fixed;
     //margin-bottom: 10%;
-    padding-left: 1%;
-    padding-right: 1%;
+    // padding-left: 1%;
+    // padding-right: 1%;
 
     .slide{
+        //width: 100%;
+        text-align: center;
+        //border: solid green;
+        //margin: auto;
+        // @include flexCenter();
 
         .cat-row-image {
         //padding: 2%;
         min-width: 300px;
         //min-height: 300px;
-        max-width: 100%;
-        max-height: 300px;
-        margin-inline: auto;
-        opacity: 0.9;
+        max-width: 60%;
+        padding: 0%;
+        //width: 50%;
+        //max-height: 300px;
+        //margin-inline: auto;
+        //opacity: 0.9;
         transition: 600ms;
+        box-shadow: 5px 5px 10px wheat;
 
 
         &:hover {
-            opacity: 1;
+            //opacity: 1;
             border-radius: 26px;
             cursor: pointer;
+            transform: scale(1.1);
         }
         }
     }

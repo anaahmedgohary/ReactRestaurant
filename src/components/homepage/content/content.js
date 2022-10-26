@@ -1,8 +1,9 @@
 import React from "react";
 import "./style/content.css";
 // import { useState, useEffect } from "react";
-import { useEffect } from "react";
+// import { useEffect } from "react";
 // import strawberry from "./images/strawberry6.svg";
+import burger from "./style/images/basically-burger-1.jpg";
 
 
 
@@ -15,44 +16,69 @@ export default function Content()
 
   function showImgPop(event)
     {
-        let imageClicked = event.target
-        let imageClickedSRC = imageClicked.src
-        console.log(imageClickedSRC)
-        let popupContainer = document.getElementById("imagePopup")
-        popupContainer.src = imageClickedSRC
-        let imageDiv = document.getElementById("popImageContainer")
-        imageDiv.classList.replace("hide-popup", "show-popup")
+    let imageClicked = event.target;
+    let imageClickedSRC = imageClicked.src;
+    console.log(imageClickedSRC);
+    let popupContainer = document.getElementById("imagePopup");
+    popupContainer.src = imageClickedSRC;
+    let imageDiv = document.getElementById("popImageContainer");
+    imageDiv.classList.replace("hide-popup", "show-popup");
 
         // image caption
-        let captionDiv = document.getElementById("popCaption")
-        let imageAlt = imageClicked.alt
-        captionDiv.innerText = imageAlt
+    let captionDiv = document.getElementById("popCaption");
+    let imageAlt = imageClicked.alt;
+    captionDiv.innerText = imageAlt;
+
+
+    imageDiv.addEventListener("click", (e) =>
+    {
+      let imag = document.getElementById("imagePopup");
+      if (e.target === imag)
+      {
+        console.log('yeaaaa');
+        return
+      } else { 
+      console.log('nono');
+      imageDiv.classList.replace("show-popup", "hide-popup");
+    }
+      
+      
+    })
+
+    // close on click anywhere
+    console.log('dddo');
+    // document.addEventListener("click", (e) =>
+    // {
+    //   console.log('dddo')
+    //   //imageDiv.classList.replace("show-popup", "hide-popup");
+    // })
+    
     }
 
     function closePopupImg()
     {
-        let imageDiv = document.getElementById("popImageContainer")
-        imageDiv.classList.replace("show-popup", "hide-popup")
+      let imageDiv = document.getElementById("popImageContainer");
+      imageDiv.classList.replace("show-popup", "hide-popup");
     }
 
-    useEffect(() =>
-    {
-        let checkBoxs = document.getElementsByClassName("filter-checkbox")
-        for (let i = 0; i < checkBoxs.length; i++)
-        {
-            checkBoxs[i].checked = true;
-            checkBoxs[i].addEventListener("change", filterBlocks);
-        }
+    // useEffect(() =>
+    // {
+    //     let checkBoxs = document.getElementsByClassName("filter-checkbox")
+    //     for (let i = 0; i < checkBoxs.length; i++)
+    //     {
+    //         checkBoxs[i].checked = true;
+    //         checkBoxs[i].addEventListener("change", filterBlocks);
+    //     }
 
-    }, [])
+    // }, [])
 
 
-    function filterBlocks()
-    {
-        let sandwiches = document.getElementById("checkBox1")
-        let sandwichesBlock = document.getElementById("sandBlock")
-        sandwiches.checked === false ? sandwichesBlock.classList.replace("PBlock", "hide-filtered") : sandwichesBlock.classList.replace("hide-filtered", "PBlock");
-    }
+    // function filterBlocks()
+    // {
+    //     let sandwiches = document.getElementById("checkBox1")
+    //     let sandwichesBlock = document.getElementById("sandBlock")
+    //     sandwiches.checked === false ? sandwichesBlock.classList.replace("PBlock", "hide-filtered") : sandwichesBlock.classList.replace("hide-filtered", "PBlock");
+    // }
 
     
 
@@ -69,7 +95,7 @@ export default function Content()
               <img
                 onClick={showImgPop}
                 className="cat-row-image"
-                src="./images/burger.jpg"
+                src={burger}
                 title="burger"
                 alt="burger"
               />
@@ -83,9 +109,7 @@ export default function Content()
                 alt="grilled cheese"
               />
             </div>
-            <div className="slide">
-              
-              {/* <div style={{ background: "black" }}><img src={strawberry} alt="" style={{background:"unset"}} /></div> */}
+            {/* <div className="slide">
               <img
                 onClick={showImgPop}
                 className="cat-row-image"
@@ -93,7 +117,7 @@ export default function Content()
                 src="./images/shawarma.jpg"
                 alt="shawarma"
               />
-            </div>
+            </div> */}
             <div className="slide">
               <img
                 onClick={showImgPop}

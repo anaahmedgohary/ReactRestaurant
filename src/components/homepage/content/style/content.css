@@ -7,28 +7,26 @@
 }
 
 .gRowCards {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 40px;
+  display: grid;
+  place-items: center;
+  border: solid red;
   background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
   background-attachment: fixed;
-  padding-left: 1%;
-  padding-right: 1%;
+}
+.gRowCards .slide {
+  text-align: center;
 }
 .gRowCards .slide .cat-row-image {
   min-width: 300px;
-  max-width: 100%;
-  max-height: 300px;
-  margin-inline: auto;
-  opacity: 0.9;
+  max-width: 60%;
+  padding: 0%;
   transition: 600ms;
+  box-shadow: 5px 5px 10px wheat;
 }
 .gRowCards .slide .cat-row-image:hover {
-  opacity: 1;
   border-radius: 26px;
   cursor: pointer;
+  transform: scale(1.1);
 }
 
 .show-popup {
