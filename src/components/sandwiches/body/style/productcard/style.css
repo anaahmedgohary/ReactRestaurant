@@ -28,11 +28,6 @@
 .mycard img {
   height: 6rem;
   width: 100%;
-  transition: all 1s;
-}
-.mycard img:hover {
-  border-radius: 50%;
-  rotate: 180deg;
 }
 
 .cards-sec {
