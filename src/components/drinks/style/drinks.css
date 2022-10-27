@@ -19,13 +19,18 @@ html, body {
 
 .forhot {
   background: linear-gradient(0deg, orange, white, white, goldenrod);
-  background-attachment: fixed;
   background-position: center;
+}
+.forhot .drink-post {
+  background-color: rgb(253, 117, 117);
 }
 
 .forcold {
-  background-attachment: fixed;
+  background: linear-gradient(0deg, rgb(107, 243, 248), white, white, rgb(123, 239, 243));
   background-position: center;
+}
+.forcold .drink-post {
+  background-color: rgb(97, 202, 243);
 }
 
 .hot-drinks-title {
@@ -64,9 +69,12 @@ html, body {
   overflow: hidden;
   border: solid;
   border-radius: 8px;
+  font-size: 1.3rem;
+  box-shadow: 1px 1px 5px;
 }
 .drink-posts-container .drink-post .drink-name {
-  font-size: 1rem;
+  font-size: 1.8rem;
+  font-weight: bold;
   text-align: center;
 }
 .drink-posts-container .drink-post .post-img {

@@ -1,5 +1,5 @@
 .FOOTER {
-  background-image: radial-gradient(circle farthest-side, #fceabb, #f8b500);
+  background-image: radial-gradient(#7472ca, rgb(40, 40, 40), rgb(40, 40, 40), #3e3d80, rgb(40, 40, 40), rgb(40, 40, 40), rgb(40, 40, 40));
   padding-top: 5%;
   padding-bottom: 5rem;
   overflow: hidden;
@@ -27,17 +27,20 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 40px;
   padding-inline: 10%;
   padding-block: 3rem;
   width: 100%;
 }
 .fotr-icon-div a {
-  flex: 1;
   text-align: center;
+  transition: 500ms;
 }
 .fotr-icon-div .footer-icon {
   width: 3rem;
+}
+.fotr-icon-div .footer-icon:hover {
+  scale: 1.1;
 }
 
 .phone-num-div {
@@ -55,14 +58,15 @@
   font-size: 1.5rem;
   font-weight: bolder;
   color: rgb(30, 30, 30);
+  color: wheat;
   border: 8px solid;
   border-color: rgb(123, 63, 63);
   border-radius: 29px 29px 30px 30px;
   padding: 1%;
   background: transparent;
   overflow: hidden;
-  -webkit-animation: rotater 2s linear 1000ms infinite normal forwards;
-          animation: rotater 2s linear 1000ms infinite normal forwards;
+  -webkit-animation: rotater 1s linear 1000ms infinite alternate;
+          animation: rotater 1s linear 1000ms infinite alternate;
 }
 .phone-num-div .call-label:hover {
   -webkit-animation: paused;
@@ -104,14 +108,20 @@
 }
 
 @-webkit-keyframes rotater {
+  0% {
+    translate: -800% 0%;
+  }
   100% {
-    rotate: 360deg;
+    translate: 600% 0%;
   }
 }
 
 @keyframes rotater {
+  0% {
+    translate: -800% 0%;
+  }
   100% {
-    rotate: 360deg;
+    translate: 600% 0%;
   }
 }
 [data-aos=new-animation] {

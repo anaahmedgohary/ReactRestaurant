@@ -25,14 +25,14 @@ $trylinear: linear-gradient(black, darkolivegreen, black);
 
 header {
     // @include flexCenter();
-    background-image: url(./images/deli-sandwich.jpg);
-    background-color: rgba(0, 0, 0, 0.45);
+    background-image: url(./images/02a.jpg);
+    background-color: rgba(25, 0, 255, 0.4);
     background-blend-mode: multiply;
-    background-attachment: fixed;
+    //background-attachment: fixed;
     background-size: 100% 100%;
     //background-size: contain;
     background-position-x: center;
-    background-position-y: -40px;
+    background-position-y: bottom;
     background-repeat: no-repeat;
     //@include gridCenter();
     display: grid;
@@ -71,10 +71,7 @@ header {
         margin: 0;
     }
 
-    .fa-solid {
-        padding: 02%;
-        color: rgba(255, 166, 0, 0.441);
-    }
+    
 
     #countVisitors {
         position: absolute;
@@ -86,28 +83,30 @@ header {
 .nav {
     @include flexCenter();
     width: 100%;
-    gap: 60px;
+    gap: 40px;
     flex-wrap: wrap;
-    padding-block: 2%;
+    padding-block: 0%;
+    background-color: rgba(40, 40, 40, 0.24);
 
     .nav-element {
         @include gridCenter();
         font-size: 2rem;
         font-family: "Alkalami", serif; //'Comforter Brush', cursive;
-        padding: 0% 2%;
+        padding: 0% 1%;
         line-height: normal;
         text-decoration: none;
         transition: 400ms;
         color: black;
         min-width: 12rem;
         height: 3.2rem;
-        background-color: white;
-        color: red;
-        border-radius: 50px 50px;
+        background-color: rgba(255, 255, 255, 0.85);
+        color: rgb(110, 55, 55);
+        border-radius: 20px 50px;
 
         &:hover {
             //box-shadow: 0px 0px 0px 0px white;
             background-color: black;
+            color: rgb(146, 175, 93);
             //color: red;
             //border-radius: 50px 50px;
             //animation:1s 1 forwards;
