@@ -80,17 +80,20 @@ $wraperColor: linear-gradient(to right, #fffbd5, #b20a2c);
     flex-wrap: wrap;
    // border: solid green;
     width:100%;
-    gap: 20px;
+    gap: 10px;
 
-        
 
     .drink-post {
         @include gridCenter();
-        border: solid;
+        //border: solid;
         text-align: center;
-        min-width: 25%;
-        max-width: 10rem;
-        padding: 2%;
+        min-width: 30%;
+        max-width: 33%;
+        height: 32rem;
+        padding: 0%;
+        overflow: hidden;
+        border: solid;
+        border-radius: 8px;
 
 
         .drink-name{
@@ -99,11 +102,14 @@ $wraperColor: linear-gradient(to right, #fffbd5, #b20a2c);
         }
 
         .post-img{
-            width: 5rem;
-            height: 5rem;
-            display: flex;
-            border: solid;
-            margin: auto;
+            
+            height: 11rem;
+            width: 18rem;
+            //object-fit: fill;
+            max-width: 100%;
+           // height: 15rem;
+            margin-inline: auto;
+            //border: solid;
         }
     }
 }

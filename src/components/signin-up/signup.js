@@ -66,36 +66,46 @@ export default function SignUp()
     
 
     return (
-      <div className="container">
+      <div className="signupcontainer">
         <div id="signupDiv">
-          <h6>Sign Up</h6>
+
+         <div>
+           <h6>Sign Up</h6>
+          </div>
+          
           <div>
             <form
               id="signinForm"
               onSubmit={handleSubmit}
             >
-              <label className="label-signin" htmlFor="email">
-                E-mail
-              </label>
-              <input
-                type="email"
-                name="email"
-                id="email"
-                required
-                onChange={handleChange}
-                
-              />
-              <label className="label-signin" htmlFor="password">
-                Password
-              </label>
-              <input
-                type="password"
-                name="password"
-                id="password"
-                required
-                onChange={handleChange}
-                
-              />
+
+              <div>
+                <label className="label-signin" htmlFor="email">
+                  E-mail
+                </label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  required
+                  onChange={handleChange}
+                  
+                />
+              </div>
+
+              <div>
+                <label className="label-signin" htmlFor="password">
+                  Password
+                </label>
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  required
+                  onChange={handleChange}
+                />
+              </div>
+
               <div>
                 <input
                   className="submit-btn btn btn-success"
@@ -106,16 +116,19 @@ export default function SignUp()
               </div>
             </form>
           </div>
+
           <div>
             <a
               className="forgot-pass"
               href="./forgotpass"
               target="_blank"
               rel="noopener noreferrer"
+              title='recover password'
             >
-              forgot password ?
+              forgot password !
             </a>
           </div>
+
         </div>
       </div>
     );

@@ -51,25 +51,27 @@ html, body {
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
-  gap: 20px;
+  gap: 10px;
 }
 .drink-posts-container .drink-post {
   display: grid;
   place-items: center;
-  border: solid;
   text-align: center;
-  min-width: 25%;
-  max-width: 10rem;
-  padding: 2%;
+  min-width: 30%;
+  max-width: 33%;
+  height: 32rem;
+  padding: 0%;
+  overflow: hidden;
+  border: solid;
+  border-radius: 8px;
 }
 .drink-posts-container .drink-post .drink-name {
   font-size: 1rem;
   text-align: center;
 }
 .drink-posts-container .drink-post .post-img {
-  width: 5rem;
-  height: 5rem;
-  display: flex;
-  border: solid;
-  margin: auto;
+  height: 11rem;
+  width: 18rem;
+  max-width: 100%;
+  margin-inline: auto;
 }/*# sourceMappingURL=drinks.css.map */

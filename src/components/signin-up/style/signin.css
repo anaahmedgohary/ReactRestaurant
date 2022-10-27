@@ -2,42 +2,62 @@
   box-sizing: border-box;
 }
 
+.signupcontainer {
+  background-color: skyblue;
+  width: 100%;
+  padding-block: 2%;
+}
+
 #signupDiv {
-  display: grid;
-  justify-items: center;
+  display: flex;
+  flex-direction: column;
   text-align: center;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  min-height: 40vh;
-  min-width: 200px;
-  max-width: 55vw;
-  margin: auto;
+  min-height: 80vh;
+  min-width: 300px;
+  max-width: 70vw;
+  margin-inline: auto;
   border: solid;
   border-radius: 6px;
   background-image: linear-gradient(-80deg, rgba(255, 255, 255, 0.827), rgba(245, 222, 179, 0.866));
 }
+#signupDiv div:nth-child(1) {
+  flex-grow: 0.4;
+}
+#signupDiv div:nth-child(2) {
+  flex-grow: 0.2;
+}
 #signupDiv h6 {
-  text-align: left;
+  text-align: center;
   font-weight: bold;
-  width: 85%;
-  margin: 2%;
+  width: 40%;
+  padding-top: 4%;
 }
 #signupDiv #signinForm {
+  min-height: 30vh;
   display: grid;
-  justify-items: center;
-  align-items: center;
+  place-items: center;
+  gap: 2rem;
 }
 #signupDiv #signinForm label {
-  font-size: 1rem;
+  font-size: 1.5rem;
+  font-family: "Times New Roman", Times, serif;
 }
 #signupDiv #signinForm input {
   font-size: 1rem;
+  min-width: 75%;
+  width: 100%;
+  max-width: 250px;
 }
 #signupDiv #signinForm .submit-btn {
   margin-top: 14%;
+  width: 100%;
 }
 #signupDiv .forgot-pass {
-  font-size: 0.6rem;
+  font-size: 1rem;
+  font-style: italic;
   text-decoration: none;
   color: rgba(141, 62, 62, 0.989);
+}
+#signupDiv .forgot-pass:hover {
+  text-decoration: underline;
 }/*# sourceMappingURL=signin.css.map */

@@ -5,17 +5,17 @@
 }
 
 header {
-  background-image: url(./images/lim.png);
+  background-image: url(./images/deli-sandwich.jpg);
   background-color: rgba(0, 0, 0, 0.45);
   background-blend-mode: multiply;
   background-attachment: fixed;
-  background-size: cover;
-  background-size: contain;
+  background-size: 100% 100%;
   background-position-x: center;
-  background-position-y: top;
+  background-position-y: -40px;
+  background-repeat: no-repeat;
   display: grid;
   align-items: end;
-  min-height: 10vh;
+  min-height: 50vh;
 }
 
 .main-title {
@@ -87,20 +87,97 @@ header {
   background-color: black;
 }
 
-@-webkit-keyframes navLink {
-  50% {
-    box-shadow: 0px 0px 25px 5px;
-  }
-  100% {
-    box-shadow: 0px 0px 0px 0px;
-  }
+.sidebarTriger {
+  display: none;
 }
 
-@keyframes navLink {
-  50% {
-    box-shadow: 0px 0px 25px 5px;
+.sidebar-nav {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 700px) {
+  .nav {
+    display: none;
   }
-  100% {
-    box-shadow: 0px 0px 0px 0px;
+  .sidebar-nav {
+    background-color: rgba(212, 164, 188, 0.2);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80vw;
+    min-height: 50vh;
+    z-index: 1000;
+    flex-direction: column;
+    gap: 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .sidebar-nav .nav-element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(135, 207, 235);
+    color: white;
+    font-size: 1.2rem;
+    max-height: 2rem;
+    padding: 0;
+  }
+  .sidebarTriger {
+    position: absolute;
+    top: 1%;
+    right: 2%;
+    display: flex;
+    z-index: 1001;
+  }
+  .sidebarTriger button {
+    border-radius: 5px 5px;
+    border: solid;
+    width: 50px;
+    height: 50px;
+    background-color: wheat;
+    position: relative;
+  }
+  .sidebarTriger .onfold {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .sidebarTriger .onfold span:nth-of-type(1) {
+    width: 80%;
+    height: 0.5rem;
+    background-color: rgb(90, 15, 15);
+  }
+  .sidebarTriger .onfold span:nth-of-type(2) {
+    width: 80%;
+    height: 0.5rem;
+    background-color: rgb(90, 15, 15);
+  }
+  .sidebarTriger .onfold span:nth-of-type(3) {
+    width: 80%;
+    height: 0.5rem;
+    background-color: rgb(90, 15, 15);
+  }
+  .sidebarTriger .onclose {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .sidebarTriger .onclose span:nth-of-type(1) {
+    position: absolute;
+    width: 100%;
+    height: 0.5rem;
+    background-color: rgb(90, 15, 15);
+    rotate: -45deg;
+  }
+  .sidebarTriger .onclose span:nth-of-type(2) {
+    position: absolute;
+    width: 100%;
+    height: 0.5rem;
+    background-color: rgb(90, 15, 15);
+    rotate: 45deg;
   }
 }/*# sourceMappingURL=hederstyle.css.map */
