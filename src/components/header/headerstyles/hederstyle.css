@@ -5,12 +5,12 @@
 }
 
 header {
-  background-image: url(./images/02a.jpg);
-  background-color: rgba(25, 0, 255, 0.4);
+  background-image: url(/public/images/content/bugatti3.jpg);
+  background-color: rgba(25, 0, 255, 0.6);
   background-blend-mode: multiply;
-  background-size: 100% 100%;
+  background-size: cover;
   background-position-x: center;
-  background-position-y: bottom;
+  background-position-y: 75%;
   background-repeat: no-repeat;
   display: grid;
   align-items: end;

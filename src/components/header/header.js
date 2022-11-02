@@ -22,15 +22,11 @@ const Mheader = (props)=>
     
     return (
       <header>
-        {/* <div className="main-title">Restaurant</div> */}
-        <div className="main-subtitle">
-          <h3>𝕭𝖊𝖘𝖙 𝕱𝖗𝖊𝖘𝖍 𝕴𝖓𝖌𝖗𝖊𝖉𝖎𝖊𝖓𝖙𝖘</h3>
-        </div>
         <nav className="nav">
           <a href="/" className="nav-element">Home</a>
-          <a href="/sandwiches" className="nav-element">Sandwiches</a>
-          <a href='/drinks' className="nav-element">Drinks</a>
-            <a className="nav-element" href="/signup">Sign Up</a>
+          {/* <a href="/allbrands" className="nav-element">Brands</a> */}
+          <a href='/allcars' className="nav-element">Cars</a>
+            <a className="nav-element" href="/join">Join</a>
           <a href='#contactsDiv' className="nav-element">Contact</a>
         </nav>
         <div className='sidebarTriger'> {/*style={{ display: "none" }}*/}

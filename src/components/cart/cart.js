@@ -1,11 +1,6 @@
 import React from 'react';
 
-
-
-import "./style/cartstyle.css"
-
-
-import CartSand from "../sandwiches/body/cartsand";
+import CartSand from "../allcars/body/cartsand";
 import { CartProvider } from "react-use-cart";
 
 const Cart = () =>
@@ -18,7 +13,6 @@ const Cart = () =>
       <div>
         <>
           <CartProvider>
-
             <CartSand />
           </CartProvider>
         </>

@@ -1,12 +1,12 @@
 import React from 'react';
 
-//import SPheader from "./components/sandwiches/header/SPheader"
-import SPbody from "./components/sandwiches/body/SPbody"
-import CartSand from "./components/sandwiches/body/cartsand"
+//import SPheader from "./components/allbrands/header/SPheader"
+import SPbody from "./components/allcars/body/SPbody"
+import CartSand from "./components/allcars/body/cartsand"
 import { CartProvider } from "react-use-cart";
 //import "./Styles/sandwiches/sandwiches.css"
 
-const Sandwiches = () => {
+const AllCars = () => {
     return (
       <>
         <CartProvider>
@@ -17,4 +17,4 @@ const Sandwiches = () => {
     );
 }
 
-export default Sandwiches;
+export default AllCars;

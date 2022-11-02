@@ -5,25 +5,29 @@
 }
 
 .product-img{
-    width: 10rem;
-    max-height: 10%;
+    width: calc(300px - 20px);
+    //width: 23rem;
+    height: 20rem;
+    //max-height: 10%;
     margin: auto;
-    overflow: hidden;
+   // object-fit: fill;
 }
 
 .mycard{
-    min-width: 14rem;
+    //min-width: 14rem;
+    min-width: 100%;
     max-width: 300px;
     min-height: 19rem;
     //margin: auto;
-    background-color: rgb(255, 186, 174);
+    background-color: rgb(90, 19, 7);
     @include flexCenter();
-    border: blueviolet solid;
+    border: solid black;
     transition: all 200ms ease-in;
     // box-shadow: 1px 5px 5px 0px  blue;
+    color: whitesmoke;
     
     &:hover{
-        box-shadow: 1px 2px 5px 0px  black;
+        box-shadow: 1px 2px 5px 0px  rgb(29, 58, 29);
         //scale: 101.1%;
 
         .addtobtn{
@@ -35,10 +39,6 @@
         transition: all 700ms ease-in;
     }
 
-    img{
-        height: 6rem;
-        width: 100%;
-    }
 }
 
 .cards-sec{

@@ -2,7 +2,7 @@ import React from 'react';
 import { useCart } from "react-use-cart";
 import "./style/productcard/style.css";
 
-const CardSandwich = (props) =>
+const ItemCard = (props) =>
 {
 
     const { addItem } = useCart();
@@ -11,10 +11,10 @@ const CardSandwich = (props) =>
     return (
         <div className='cards-sec'>
             <div className="card mycard">
-                <img className="card-img-top product-img" src={props.image} alt="" />
+                <img className="product-img" src={props.image} alt="" />
                 <div className="card-body">
                     <h5 className="card-title text-center">{props.name}</h5>
-                    <h6 className="card-title">{props.price} le</h6>
+                    <h6 className="card-title">Price: ${props.price}</h6>
                     <p className="card-text text-center">
                         {props.description}
                     </p>
@@ -27,4 +27,4 @@ const CardSandwich = (props) =>
     );
 }
 
-export default CardSandwich;
+export default ItemCard;

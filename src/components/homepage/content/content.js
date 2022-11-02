@@ -2,10 +2,6 @@ import React from "react";
 import "./style/content.css";
 // import { useState, useEffect } from "react";
 // import { useEffect } from "react";
-// import strawberry from "./images/strawberry6.svg";
- import burger from "./style/images/basically-burger-1.jpg";
-
-
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -86,22 +82,18 @@ export default function Content()
           </div>
 
           <div className="gRowCards">
-
             
             <div className="slide slide1">
-              
                 <img
                   onClick={showImgPop}
                   className="cat-row-image"
-                  src={burger}
-                  title="burger"
-                  alt="burger"
+                src="./images/content/bugatti2.jpg"
+                title="Bugatti Veyron"
+                alt="bugatti"
                 />
-              
-              
 
               <div className="para-div">
-                <h3>Burger</h3>
+                <h3>Bugatti Veyron</h3>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore repellat ullam iusto corrupti quas voluptate, at esse, velit quia magnam exercitationem sed nulla, molestias doloribus praesentium facilis ipsam ex quibusdam.
                 </p>
@@ -113,20 +105,18 @@ export default function Content()
 
             <div className="slide slide2" data-aos="flip-up" data-aos-duration="1200">
 
-              
-
               <img
                 onClick={showImgPop}
                 className="cat-row-image"
-                src="./images/grilledcheese.jpg"
-                title="grilled cheese"
-                alt="grilled cheese"
+                src="./images/content/Lamborghini.jpg"
+                title="Lamborghini Aventador"
+                alt="Lamborghini"
                 // data-aos="fade-right"
               />
               <div className="para-div">
-                <h3>Grilled Cheese</h3>
+                <h3>Lamborghini Aventador</h3>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore repellat ullam iusto corrupti quas voluptate, at esse, velit quia magnam exercitationem sed nulla, molestias doloribus praesentium facilis ipsam ex quibusdam.
+                  Aventador LP 780-4 Ultimae ipsum dolor sit amet consectetur adipisicing elit. Labore repellat ullam iusto corrupti quas voluptate, at esse, velit quia magnam exercitationem sed nulla, molestias doloribus praesentium facilis ipsam ex quibusdam.
                 </p>
               </div>
               
@@ -144,44 +134,26 @@ export default function Content()
               <img
                 onClick={showImgPop}
                 className="cat-row-image"
-                title="burrito"
-                src="./images/burrito.jpg"
-                alt="burrito"
+                title="ferrari portofino"
+                src="./images/content/ferrari-portofino.jpg"
+                alt="ferrari portofino"
                 // data-aos='fade-left'
               />
 
               <div className="para-div">
-                <h3>Burrito</h3>
+                <h3>Ferrari Portofino</h3>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore repellat ullam iusto corrupti quas voluptate, at esse, velit quia magnam exercitationem sed nulla, molestias doloribus praesentium facilis ipsam ex quibusdam.
+                  ferrari portofino is ipsum dolor sit amet consectetur adipisicing elit. Labore repellat ullam iusto corrupti quas voluptate, at esse, velit quia magnam exercitationem sed nulla, molestias doloribus praesentium facilis ipsam ex quibusdam.
                 </p>
               </div>
 
             </div>
             <div data-aos="fade-down" className="viewAll-div">
-              <a data-aos='fade-left' className="viewAll-link" href="/Sandwiches" target="_blank">
-                View all Sandwiches
-                {/* <img
-                  className="viewAll-img"
-                  title="More Sandwiches"
-                  alt="More Sandwiches"
-                /> */}
-              </a>
-              <a className="viewAll-link" href="/drinks" target="_blank">
-                View all Drinks
-                {/* <img
-                  className="viewAll-img"
-                  title="More Sandwiches"
-                  alt="More Sandwiches"
-                /> */}
-              </a>
-              <a data-aos='fade-right' className="viewAll-link" href="/meals" target="_blank">
-                View all Meals
-                {/* <img
-                  className="viewAll-img"
-                  title="More Sandwiches"
-                  alt="More Sandwiches"
-                /> */}
+              {/* <a data-aos='fade-left' className="viewAll-link" href="/allbrands" target="_blank">
+                View all Brands
+              </a> */}
+              <a className="viewAll-link" href="/allcars" target="_blank">
+                View all Cars
               </a>
             </div>
           </div>

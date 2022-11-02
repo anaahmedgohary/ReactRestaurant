@@ -5,7 +5,7 @@ import Mheader from './components/header/header';
 import Mfooter from "./components/footer/Footer";
 import Home from "./home"
 import SignUp from "./components/signin-up/signup";
-import Sandwiches from "./sandwiches"
+import AllCars from "./allcars"
 import CartP from "./CartP";
 import Drinks from './components/drinks/drinks';
 
@@ -18,8 +18,8 @@ const App = () => {
         <Mheader />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/signup" element={<SignUp />} />
-          <Route path="/sandwiches" element={<Sandwiches />} />
+          <Route path="/join" element={<SignUp />} />
+          <Route path="/allcars" element={<AllCars />} />
           <Route path="/cart" element={<CartP />} />
           <Route path="/drinks" element={<Drinks />} />
         </Routes>

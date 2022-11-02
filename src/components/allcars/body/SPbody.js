@@ -2,8 +2,8 @@ import React from "react";
 
 import "./style/spbody.css";
 
-import CardSandwich from "./cardSandwich"
-import dataSandwich from "./dataSandwich"
+import ItemCard from "./itemcard"
+import ProductData from "./productdata"
 
 
 const SPbody = () =>
@@ -16,10 +16,10 @@ const SPbody = () =>
     <div className="spbody">
       <div className="container py-4 prod-cards">
         <div className="sandwich-cards-container">
-          {dataSandwich.allSandwiches.map((item, index) => {
+          {ProductData.allSandwiches.map((item, index) => {
             return (
               <div>
-                  <CardSandwich
+                  <ItemCard
                     image={item.image}
                     name={item.name}
                     price={item.price}

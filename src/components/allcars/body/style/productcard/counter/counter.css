@@ -1,5 +1,4 @@
 .cart-div {
-  background-image: linear-gradient(90deg, rgb(160, 157, 157), skyblue, rgb(173, 170, 170));
   overflow: hidden;
 }
 
@@ -61,10 +60,11 @@
 }
 
 .added-items-row {
-  background-color: yellow;
+  background-color: rgb(73, 73, 35);
   text-align: center;
   padding-top: 1%;
   padding-bottom: 1%;
+  color: whitesmoke;
 }
 
 #thetable {
@@ -75,8 +75,9 @@
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
-  background-color: rgb(231, 231, 139);
+  background-color: rgb(24, 24, 15);
   text-align: center;
+  color: whitesmoke;
 }
 
 .mytablebody {
@@ -84,7 +85,6 @@
   flex-direction: column;
   flex-wrap: wrap;
   margin: auto;
-  border-bottom: 15px solid;
 }
 
 .rowcontent {
@@ -100,9 +100,9 @@
 }
 
 .total-div {
-  background-color: rgba(167, 238, 167, 0.795);
+  background-color: rgba(105, 139, 105, 0.795);
   border-radius: 40px;
-  width: 80%;
+  padding-inline: 6%;
   margin-bottom: 2rem;
   margin-top: 1rem;
 }
