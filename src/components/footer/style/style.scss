@@ -98,9 +98,10 @@ $backLG001: radial-gradient(#7472ca, rgba(40,40,40,1),rgba(40,40,40,1),#3e3d80,r
         //padding-bottom: 0%;
         background: transparent;
         overflow: hidden;
+        border-bottom-color: transparent;
         //-webkit-text-stroke-width: 0.9px;
         //-webkit-text-stroke-color: black;
-        animation: rotater 1s linear 1000ms infinite alternate;
+        animation: rotater 2s linear 1000ms  infinite alternate forwards ;
         &:hover{
             animation:paused;
             border-bottom-color: transparent;
@@ -143,11 +144,13 @@ $backLG001: radial-gradient(#7472ca, rgba(40,40,40,1),rgba(40,40,40,1),#3e3d80,r
 }
 @keyframes rotater {
     0%{
-        translate: -800% 0%;
+      //  translate: -100% 0%;
+        rotate: -20deg;
     }
     100%{
         //rotate: 360deg;
-        translate: 600% 0%;
+    //    translate: 100% 0%;
+        rotate:  20deg;
     }
 }
 

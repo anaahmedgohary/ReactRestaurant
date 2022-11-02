@@ -65,8 +65,9 @@
   padding: 1%;
   background: transparent;
   overflow: hidden;
-  -webkit-animation: rotater 1s linear 1000ms infinite alternate;
-          animation: rotater 1s linear 1000ms infinite alternate;
+  border-bottom-color: transparent;
+  -webkit-animation: rotater 2s linear 1000ms infinite alternate forwards;
+          animation: rotater 2s linear 1000ms infinite alternate forwards;
 }
 .phone-num-div .call-label:hover {
   -webkit-animation: paused;
@@ -109,19 +110,19 @@
 
 @-webkit-keyframes rotater {
   0% {
-    translate: -800% 0%;
+    rotate: -20deg;
   }
   100% {
-    translate: 600% 0%;
+    rotate: 20deg;
   }
 }
 
 @keyframes rotater {
   0% {
-    translate: -800% 0%;
+    rotate: -20deg;
   }
   100% {
-    translate: 600% 0%;
+    rotate: 20deg;
   }
 }
 [data-aos=new-animation] {

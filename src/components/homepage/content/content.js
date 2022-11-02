@@ -111,7 +111,7 @@ export default function Content()
 
 
 
-            <div className="slide slide2" data-aos="flip-up">
+            <div className="slide slide2" data-aos="flip-up" data-aos-duration="1200">
 
               
 
@@ -140,7 +140,7 @@ export default function Content()
                 alt="shawarma"
               />
             </div> */}
-            <div className="slide slide3" data-aos="flip-up">
+            <div className="slide slide3" data-aos="flip-up" data-aos-duration="1200">
               <img
                 onClick={showImgPop}
                 className="cat-row-image"

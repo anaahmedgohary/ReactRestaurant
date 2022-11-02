@@ -12,7 +12,7 @@ import 'aos/dist/aos.css';
 const Mfooter = (props) =>
 {
 
-  AOS.init();
+  AOS.init(1000);
 
   function copyToClipboard(text)
   {
@@ -42,17 +42,17 @@ const Mfooter = (props) =>
         </div> */}
         <div className="above-icon">Reach Us!</div>
         <div className="fotr-icon-div" id='contactsDiv'>
-          <a data-aos="fade-right" data-aos-delay="250" href="https://wa.me/201000212212">
+          <a data-aos="fade-right" data-aos-delay="250" data-aos-duration="1000"  href="https://wa.me/201000212212">
             <img className="footer-icon" src={require("./images/whatsapp-logo.png")} title="whatsapp" alt='' /></a>
-          <a data-aos="fade-right" data-aos-delay="150" href="http://www.facebook.com" >
+          <a data-aos="fade-right" data-aos-duration="1000" data-aos-delay="150" href="http://www.facebook.com" >
             <img className="footer-icon" src={require("./images/facebook-logo.png")} title="facebook" alt='' /></a>
-          <a data-aos="fade-right" data-aos-delay="50" href="http://www.instagram.com" >
+          <a data-aos="fade-right" data-aos-duration="1000" data-aos-delay="50" href="http://www.instagram.com" >
             <img className="footer-icon" src={require("./images/instagram-logo.png")} title="instagram" alt='' /></a>
-          <a data-aos="fade-left" data-aos-delay="50" href="http://www.tiktok.com" >
+          <a data-aos="fade-left" data-aos-duration="1000" data-aos-delay="50" href="http://www.tiktok.com" >
             <img className="footer-icon" src={require("./images/tiktok-logo.png")} title="tiktok" alt='' /></a>
-          <a data-aos="fade-left" data-aos-delay="150" href="http://www.youtube.com" >
+          <a data-aos="fade-left" data-aos-duration="1000" data-aos-delay="150" href="http://www.youtube.com" >
             <img className="footer-icon" src={require("./images/youtube-logo.png")} title="youtube" alt='' /></a>
-          <a data-aos="fade-left" data-aos-delay="250" href="mailto:shahdresturant@gmail.com" >
+          <a data-aos="fade-left" data-aos-duration="1000" data-aos-delay="250" href="mailto:shahdresturant@gmail.com" >
             <img className="footer-icon" src={require("./images/email-icon.png")} title="email" alt='' /></a>
            {/* <a href="" target="_blank"><img className="footer-icon" src="" alt=""></a> */}
         </div>
