@@ -10,9 +10,7 @@ import Content from './components/homepage/content/content';
 const Home = () => {
     return (
       <div>
-        <div>
           <Content />
-        </div>
       </div>
     );
 }

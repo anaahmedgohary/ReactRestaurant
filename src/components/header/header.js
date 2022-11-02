@@ -30,7 +30,6 @@ const Mheader = (props)=>
           <a href="/" className="nav-element">Home</a>
           <a href="/sandwiches" className="nav-element">Sandwiches</a>
           <a href='/drinks' className="nav-element">Drinks</a>
-          <a href='/meals' className="nav-element">Meals</a>
             <a className="nav-element" href="/signup">Sign Up</a>
           <a href='#contactsDiv' className="nav-element">Contact</a>
         </nav>

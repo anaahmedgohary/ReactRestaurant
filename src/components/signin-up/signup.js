@@ -8,6 +8,7 @@ import { createClient } from '@supabase/supabase-js';
 export default function SignUp()
 {
   
+  // eslint-disable-next-line no-unused-vars
   const [inputs, setInputs] = useState();
   const [iemail, setIemail] = useState("");
   const [ipassword, setIpassword] = useState("");
@@ -18,17 +19,12 @@ export default function SignUp()
     const value = event.target.value;
     setInputs(values => ({ ...values, [name]: value }));
     
-    console.log(inputs);
+    // console.log(inputs);
     
-    //console.log(inputs.password);
-    //console.log(inputs);
     setIemail(document.getElementById("email").value);
     setIpassword(document.getElementById("password").value);
     
   }
-  
-  // console.log(iemail);
-  // console.log(ipassword);
   
   const handleSubmit = async (event) =>
   {
@@ -46,6 +42,7 @@ export default function SignUp()
     const privates = new urls();
     const SUPABASE_ANON_KEY = privates.SPAK
     const supabase = createClient(supabaseUrl, SUPABASE_ANON_KEY);
+    // eslint-disable-next-line no-unused-vars
     const { data, error } = await supabase
       .from('newuser')
       .insert([
@@ -60,7 +57,7 @@ export default function SignUp()
     document.getElementById("password").value = "";
     alert("Thank You!")
     console.log(error);
-    console.log(data);
+    // console.log(data);
     
   }
     
