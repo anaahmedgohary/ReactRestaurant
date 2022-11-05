@@ -20,7 +20,7 @@ const SPbody = () =>
             return (
               <div>
                   <ItemCard
-                    image={item.image}
+                    img={item.img}
                     name={item.name}
                     price={item.price}
                     description={item.description}

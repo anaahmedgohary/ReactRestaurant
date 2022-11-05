@@ -21,7 +21,7 @@ const CartSand = () =>
     if (isEmpty)
     {
         //cartcounter.textContent = 0;
-        return <h1 className="cart-empty">Cart is empty!</h1>
+        return <h1 className="cart-empty">Wishlist is empty!</h1>
     };
 
   return (
@@ -37,17 +37,17 @@ const CartSand = () =>
 
         <div className="row justify-content-center">
             <div className="col-12">
-                <h5 className="added-items-row"> ({totalItems}) items in Cart.  from ({totalUniqueItems}) categories</h5>
-                  <table className="rowcontent" id="thetable">
+                  <h5 className="added-items-row"> ({totalItems}) items in Wishlist.  from ({totalUniqueItems}) categories</h5>
+                <table className="tabel" id="thetable">
                     {items.map((item, index) =>
                     {
                         return (
-                            <tbody className="mytablebody rowcontent">
+                            <tbody className="mytablebody" key={index}>
                                 
                                 
                                 <tr className="rowcontent">
                                     <td>
-                                        <img src={item.image} className="cartrowimg" alt="productimage" />
+                                        <img src={item.img} className="cartrowimg" alt="productimage" />
                                     </td>
                                     <td>{item.name}</td>
                                     <th>price</th>
@@ -72,12 +72,12 @@ const CartSand = () =>
             </div>
             <div className="col-auto ms-auto total-div container">
                   <h2 className="container">
-                    Total Price (LE): <strong> {cartTotal} </strong> 
+                    Total Price: $<strong> {cartTotal} </strong> 
                 </h2>
             </div>
             <div>
                 <button className="btn btn-danger ms-2" onClick={emptyCart}>
-                    Clear Cart
+                      Clear Wishlist
                 </button>
             </div>
         </div>

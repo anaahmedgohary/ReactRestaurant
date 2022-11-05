@@ -21,7 +21,7 @@ const App = () => {
           <Route path="/join" element={<SignUp />} />
           <Route path="/allcars" element={<AllCars />} />
           <Route path="/cart" element={<CartP />} />
-          <Route path="/drinks" element={<Drinks />} />
+          <Route path="/superbikes" element={<Drinks />} />
         </Routes>
         <Mfooter />
       </Router>

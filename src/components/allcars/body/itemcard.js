@@ -11,7 +11,7 @@ const ItemCard = (props) =>
     return (
         <div className='cards-sec'>
             <div className="card mycard">
-                <img className="product-img" src={props.image} alt="" />
+                <img className="product-img" src={props.img} alt="" />
                 <div className="card-body">
                     <h5 className="card-title text-center">{props.name}</h5>
                     <h6 className="card-title">Price: ${props.price}</h6>
@@ -19,7 +19,7 @@ const ItemCard = (props) =>
                         {props.description}
                     </p>
                     <button onClick={()=> addItem(props.item)} className="btn btn-success addtobtn">
-                        Add To Cart
+                        add to Wishlist
                     </button>
                 </div>
             </div>

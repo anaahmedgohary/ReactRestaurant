@@ -26,7 +26,11 @@ const Mheader = (props)=>
           <a href="/" className="nav-element">Home</a>
           {/* <a href="/allbrands" className="nav-element">Brands</a> */}
           <a href='/allcars' className="nav-element">Cars</a>
-            <a className="nav-element" href="/join">Join</a>
+
+          <a href="/superbikes" className="nav-element">Bikes</a>
+
+          <a className="nav-element" href="/join">Join</a>
+          
           <a href='#contactsDiv' className="nav-element">Contact</a>
         </nav>
         <div className='sidebarTriger'> {/*style={{ display: "none" }}*/}

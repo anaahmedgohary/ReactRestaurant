@@ -1,63 +1,69 @@
-import coffee from "./images/coffee01.jpg";
-import tea from "./images/tea01.jpg";
-import hotchoco from "./images/hotchoco01.jpg";
+import coffee from "./images/bmw-G310GS.jpg";
+import tea from "./images/streetfighterv4.jpg";
+import hotchoco from "./images/KawasakiZH2.jpg";
 
-import orange from "./images/orange01.jpg";
-import lemonade from "./images/lemon01.jpg";
-import mint from "./images/mint01.jpg";
+import orange from "./images/HondaSP125.jpeg";
+import lemonade from "./images/Suzuki-Katana.jpg";
+import mint from "./images/Yamahayzf.jpg";
 
 
 const DrinksData = {
     hotdrinks: [
         {
-            id:1,
-            name:"Coffee",
+            id: "h1",
+            brand: "BMW",
+            name:"BMW - G310GS",
             img: coffee,
-            size:'small',
-            sugar:'low',
-            price:10
+            size:'Small',
+            mileage:'High',
+            price: 30800
         },
         {
-            id: 2,
-            name:"Tea",
+            id: "h2",
+            brand:"Ducati",
+            name:"Ducati Streetfighter V4",
             img: tea,
-            size: "medium",
-            sugar:"medium", 
-            price:10
+            size: "Medium",
+            mileage:"Balanced", 
+            price: 31413
         },
         {
-            id: 3,
-            name:"Hot Chocolate",
+            id: "h3",
+            brand: "Kawasaki",
+            name: "Kawasaki Z H2", // Kawasaki Z H2
             img: hotchoco,
-            size: 'big',
-            sugar:'high',
-            price:25
+            size: 'Big',
+            mileage:'Low',
+            price: 32000
         },
     ],
     colddrinks: [
         {
-            id: 1,
-            name: "Lemon",
+            id: "c1",
+            brand: "Honda",
+            name: "Honda SP",
+            img: orange,
+            size: 'Medium',
+            mileage: 'Low',
+            price: 23000
+        },
+        {
+            id: "c2",
+            brand: "Suzuki",
+            name: "Suzuki Katana",
             img: lemonade,
             size: 'big',
-            sugar: 'high',
-            price: 11
+            mileage: 'Low',
+            price: 25000
         },
         {
-            id: 2,
-            name: "Orange",
-            img: orange,
-            size: 'big',
-            sugar: 'high',
-            price: 14
-        },
-        {
-            id: 3,
-            name: "Mint",
+            id: "c3",
+            brand: "Yamaha",
+            name: "Yamaha YZF R1M",
             img: mint,
             size: 'big',
-            sugar: 'high',
-            price: 9
+            mileage: 'Low',
+            price: 35000
         }
     ]
 

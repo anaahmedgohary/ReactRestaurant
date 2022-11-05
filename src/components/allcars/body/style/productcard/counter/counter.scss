@@ -83,7 +83,7 @@
     width: 80vw;
     margin: auto;
     @include flexCenter();
-    flex-direction: row;
+    gap: 20px;
     flex-wrap: wrap;
     background-color: rgb(24, 24, 15);
     text-align: center;
@@ -94,16 +94,18 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin: auto;
+   // margin: auto;
+    min-width: 300px;
+    border: solid rgb(92, 80, 161);
+    box-shadow: 1px 1px 4px 1px rgb(157, 189, 236);
     //border-bottom: 15px solid;
 }
 
 .rowcontent{
-    display: flex;
+    @include flexCenter();
     flex-wrap: wrap;
     flex-direction: column;
     margin: auto;
-    margin-bottom: 5%;
     
 }
 
