@@ -17,7 +17,8 @@ $backLG001: radial-gradient(#7472ca, rgba(40,40,40,1),rgba(40,40,40,1),#3e3d80,r
 
 
 .FOOTER {
-    background-image: $backLG001;
+    //background-image: $backLG001;
+    background-color: rgb(40, 40, 40);
     padding-top: 5%;
     padding-bottom: 5rem;
     overflow: hidden;
@@ -87,10 +88,9 @@ $backLG001: radial-gradient(#7472ca, rgba(40,40,40,1),rgba(40,40,40,1),#3e3d80,r
         //width: 100%;
         font-size: 1.5rem;
         font-weight: bolder;
-        color: rgb(30, 30, 30);
-        color: wheat;
+        color: black;
         border: 8px solid;
-        border-color: rgb(123, 63, 63);
+       // border-color: rgb(123, 63, 63);
         //border-bottom: none;
         //border-top: none;
         border-radius: 29px 29px 30px 30px;
@@ -112,9 +112,9 @@ $backLG001: radial-gradient(#7472ca, rgba(40,40,40,1),rgba(40,40,40,1),#3e3d80,r
         width: fit-content;
         @include flexCentreWrap();
         gap: 15px;
-        border: 8px solid;
+        border: 8px solid black;
         border-radius: 40px 4px;
-        border-color: rgb(123, 63, 63);
+      //  border-color: rgb(123, 63, 63);
         border-top-color: transparent;
         padding-block: 2%;
         padding-inline: 1%;
@@ -128,8 +128,9 @@ $backLG001: radial-gradient(#7472ca, rgba(40,40,40,1),rgba(40,40,40,1),#3e3d80,r
                 font-size: 1.2rem;
                 text-decoration: none;
                 color: unset;
-                background-color: rgb(123, 63, 63);
+                background-color: rgb(83, 0, 0);
                 color: rgb(206, 223, 223);
+                border: none;
 
                 &:hover{
                     background-color: red;
