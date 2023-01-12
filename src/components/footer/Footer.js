@@ -52,7 +52,7 @@ const Mfooter = (props) =>
             <img className="footer-icon" src={require("./images/tiktok-logo.png")} title="tiktok" alt='' /></a>
           <a data-aos="fade-left" data-aos-duration="1000" data-aos-delay="150" href="http://www.youtube.com" >
             <img className="footer-icon" src={require("./images/youtube-logo.png")} title="youtube" alt='' /></a>
-          <a data-aos="fade-left" data-aos-duration="1000" data-aos-delay="250" href="mailto:shahdresturant@gmail.com" >
+          <a data-aos="fade-left" data-aos-duration="1000" data-aos-delay="250" href="mailto:gogoahmed13@gmail.com" >
             <img className="footer-icon" src={require("./images/email-icon.png")} title="email" alt='' /></a>
            {/* <a href="" target="_blank"><img className="footer-icon" src="" alt=""></a> */}
         </div>
