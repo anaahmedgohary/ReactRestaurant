@@ -1,9 +1,9 @@
 import React from 'react';
 import "./style/signin.css";
 import { useState } from "react";
-import $ from "jquery";
+// import $ from "jquery";
 //import axios from 'axios';
-import { createClient } from '@supabase/supabase-js';
+// import { createClient } from '@supabase/supabase-js';
 
 export default function SignUp()
 {
@@ -26,40 +26,40 @@ export default function SignUp()
     
   }
   
-  const handleSubmit = async (event) =>
-  {
+  // const handleSubmit = async (event) =>
+  // {
     
-    event.preventDefault();
-    //axios.defaults.baseURL = process.env.APP_URL
-    // process.env.NOW_URL
-    class urls
-    {
-      #value = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJmamVjdmFraWpvcW9vaWt0cG9uIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NjQ4NTM2MDIsImV4cCI6MTk4MDQyOTYwMn0.Ryea4rE_iOPb49WzUhvHZiOaKMkL_48kNPMVejaeP_M';
-      SPAK = this.#value
-    }
-    const supabaseUrl = 'https://rfjecvakijoqooiktpon.supabase.co';
-    //const supabaseKey = process.env.SUPABASE_KEY;
-    const privates = new urls();
-    const SUPABASE_ANON_KEY = privates.SPAK
-    const supabase = createClient(supabaseUrl, SUPABASE_ANON_KEY);
-    // eslint-disable-next-line no-unused-vars
-    const { data, error } = await supabase
-      .from('newuser')
-      .insert([
-        { email: `${iemail}`, password: `${ipassword}` }
+  //   event.preventDefault();
+  //   //axios.defaults.baseURL = process.env.APP_URL
+  //   // process.env.NOW_URL
+  //   class urls
+  //   {
+  //     #value = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InJmamVjdmFraWpvcW9vaWt0cG9uIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NjQ4NTM2MDIsImV4cCI6MTk4MDQyOTYwMn0.Ryea4rE_iOPb49WzUhvHZiOaKMkL_48kNPMVejaeP_M';
+  //     SPAK = this.#value
+  //   }
+  //   const supabaseUrl = 'https://rfjecvakijoqooiktpon.supabase.co';
+  //   //const supabaseKey = process.env.SUPABASE_KEY;
+  //   const privates = new urls();
+  //   const SUPABASE_ANON_KEY = privates.SPAK
+  //   const supabase = createClient(supabaseUrl, SUPABASE_ANON_KEY);
+  //   // eslint-disable-next-line no-unused-vars
+  //   const { data, error } = await supabase
+  //     .from('newuser')
+  //     .insert([
+  //       { email: `${iemail}`, password: `${ipassword}` }
         
-    ]);
+  //   ]);
     
-    $("#submitSignUp").off("click");
-    $("#submitSignUp").prop('disabled', true);
-    $("#submitSignUp").hide();
-    document.getElementById("email").value = "";
-    document.getElementById("password").value = "";
-    alert("Thank You!")
-    console.log(error);
-    // console.log(data);
+  //   $("#submitSignUp").off("click");
+  //   $("#submitSignUp").prop('disabled', true);
+  //   $("#submitSignUp").hide();
+  //   document.getElementById("email").value = "";
+  //   document.getElementById("password").value = "";
+  //   alert("Thank You!")
+  //   console.log(error);
+  //   // console.log(data);
     
-  }
+  // }
     
 
     return (
@@ -73,7 +73,7 @@ export default function SignUp()
           <div>
             <form
               id="signinForm"
-              onSubmit={handleSubmit}
+              
             >
 
               <div>
